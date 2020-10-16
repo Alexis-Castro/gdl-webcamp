@@ -6,6 +6,7 @@ html {
 :root {
     --font-titles: 'Oswald', sans-serif;
     --font-parrafo: 'Raleway', sans-serif;
+    --color-primary: #fe4918;
 }
 
 *, *::before, *::after {
@@ -19,11 +20,42 @@ img {
     max-width: 100%;
 }
 
+h2, h3 {
+    font-size: 3.2rem;
+    font-family: var(--font-titles);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
 .contenedor {
-    max-width: 1100px;
+    max-width: 1180px;
     margin-left: auto;
     margin-right: auto;
 }
+
+.button {
+    background-color: var(--color-primary);
+    padding: 10px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: var(--font-titles);
+    text-decoration: none;
+    font-size: 1.7rem;
+    margin-top: 20px;
+    display: inline-block;
+    border: 2px solid var(--color-primary);
+}
+
+.numero {
+    margin: 0;
+    color: var(--color-primary);
+    font-family: var(--font-titles);
+    font-weight: 400;
+    font-size: 6rem;
+    padding: .5rem 0;
+}
+
 
 /* ******************** */
 
@@ -33,7 +65,7 @@ img {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 100vh;
+    height: 60rem;
     display: flex;
     align-items: center;
 }
@@ -72,14 +104,14 @@ img {
 }
 .header__fecha-ubicacion p{
     margin: 0 2rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #fff;
     font-family: var(--font-parrafo);
     text-transform: uppercase;
     font-weight: 600;
 }
 .header__fecha-ubicacion .icono {
-    color: #ff3c00;
+    color: var(--color-primary);
     font-size: 2.4rem;
     margin: 0 .5rem;
 }
@@ -99,7 +131,7 @@ img {
     color: #fff;
     font-family: var(--font-parrafo);
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 
@@ -153,12 +185,6 @@ img {
     text-align: center;
     padding: 20px 20px;
 }
-
-.conferencia__contenedor h2 {
-    font-size: 3.2rem;
-    font-family: var(--font-titles);
-    text-transform: uppercase;
-}
 .conferencia__contenedor h2::after {
     content: '';
     background-image: url(img/separador.png);
@@ -199,26 +225,6 @@ img {
     padding: 15px;
     padding-top: 5rem;
 }
-.programa_evento .button {
-    /* position: relative; */
-    /* left: 350px; */
-    background-color: #fe4918;
-    padding: 10px 30px;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: var(--font-titles);
-    text-decoration: none;
-    font-size: 1.7rem;
-    margin-top: 20px;
-    display: inline-block;
-    border: 2px solid #fe4918;
-}
-.programa_evento h2 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 3.2rem;
-    text-transform: uppercase;
-    text-align: center;
-}
 .programa_evento h2::after {
     content: '';
     margin-left: auto;
@@ -230,12 +236,12 @@ img {
 }
 @media (min-width: 768px) {
     .programa_evento {
-      width: 70%;
+        width: 70%;
     }
 }
 @media (min-width: 992px) {
     .programa_evento {
-      width: 50%;
+        width: 50%;
     }
 }
 .menu__programa {
@@ -256,7 +262,7 @@ img {
     font-size: 1.8rem;
     position: relative;
     padding-bottom: 10px;
-    border-bottom: 1px solid #fe4918;
+    border-bottom: 1px solid var(--color-primary);
 }
 .menu__programa a.activo::after {
     position: absolute;
@@ -280,7 +286,7 @@ img {
 }
 .menu__programa .icono,
 .detalle_evento .icono{
-    color: #fe4918;
+    color: var(--color-primary);
     font-size: 1.6rem;
     margin-right: 10px;
 }
@@ -290,7 +296,7 @@ img {
   
 
 
-  /** Detalle Evento **/
+/******* Detalle Evento *******/
 .detalle_evento {
     margin-top: 20px;
     border-bottom: 1px solid #000;
@@ -302,10 +308,191 @@ img {
 .detalle_evento h3 {
     font-family: var(--font-parrafo);
     font-size: 1.8rem;
-    color: #fe4918;
+    color: var(--color-primary);
 }
 .detalle_evento p {
     font-family: var(--font-parrafo);
     font-size: 1.6rem;
     margin-bottom: 20px;
 }
+
+
+/****** Nuestros Invitados ******/
+.section_invitados h2::after {
+    content: '';
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/separador.png);
+    height: 30px;
+    width: 100px;
+    display: block;
+}
+
+.invitados__contenedor {
+    padding: 25px;
+}
+
+.invitados_img {
+    position: relative;
+    display: grid;
+    gap: 40px 15px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-content: center;
+    justify-items: center;
+}
+
+.invitados__div > img {
+    filter: grayscale(100%);
+    transition: filter .3s ease-in-out, transform .3s ease-in-out;
+}
+.invitados__div {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.invitados__div:hover img {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+.invitados__div h3 {
+    position: absolute;
+    margin: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 1.2rem 1rem;
+    font-size: 2rem;
+    color: var(--color-primary);
+    font-weight: 400;
+    background-color: rgba(0,0,0,.55);
+    transition: transform .3s ease-in-out, opacity .3s ease-in;
+}
+
+.invitados__div:hover h3 {
+    transform: translateY(4.5rem);
+    opacity: 0;
+}
+
+
+
+/********* Contador talleres, dias, y mas... **********/
+.section_contador {
+    background: linear-gradient( rgba(0,0,0,.4), rgba(0,0,0,.4) ), url(img/bg-resumen.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 6rem 0;
+}
+
+.contenedor__contador {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    row-gap: 3rem;
+}
+
+.contador__div {
+    text-align: center;
+}
+
+.contador__div h3 {
+    margin: 1rem 0 0;
+    font-size: 1.6rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: var(--font-titles);
+}
+
+/* @media (min-width: ) {
+    .section_contador {
+        padding: 12rem 0;
+    }
+} */
+
+
+
+/*********** Precios **********  */
+
+.precios__contenedor {
+    padding: 25px;
+}
+.precios__title h2::after {
+    content: '';
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/separador.png);
+    height: 30px;
+    width: 100px;
+    display: block;
+}
+
+.contenedor__precios__lista {
+    display: grid;
+    gap: 2rem 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.precios__lista:nth-child(2n) .button{
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.precios__lista {
+    border: 1px solid #e1e1e1;
+    text-align: center;
+    transition: transform .3s ease;
+}
+
+.precios__lista:hover {
+    transform: scale(1.1);
+    border: 1px solid var(--color-primary);
+    box-shadow: 0 0 20px #666;
+}
+
+.item_precio {
+    padding: 3rem 1rem;
+    background-color: #fff;
+}
+
+.item_precio h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    font-weight: 400;
+}
+
+.item_precio .numero {
+    color: #000;
+    font-size: 5.5rem;
+    padding: 1.5rem;
+}
+
+.item_precio ul {
+    font-family: var(--font-titles);
+    font-size: 1.4rem;
+    list-style: none;
+    padding: 0;
+    margin: 1rem;
+}
+
+.item_precio ul > li {
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    color: #868686;
+}
+
+.item_precio .icono {
+    color: #32cd32;
+    margin: 0 .5rem;
+}
+
+.item_precio .button {
+    margin-top: 0;
+    background-color: #fff;
+    color: var(--color-primary);
+}
+
