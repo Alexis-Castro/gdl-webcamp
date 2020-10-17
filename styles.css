@@ -27,6 +27,15 @@ h2, h3 {
     text-align: center;
 }
 
+h2::after {
+    content: '';
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/separador.png);
+    height: 30px;
+    width: 100px;
+    display: block;
+}
 
 .contenedor {
     max-width: 1180px;
@@ -185,15 +194,6 @@ h2, h3 {
     text-align: center;
     padding: 20px 20px;
 }
-.conferencia__contenedor h2::after {
-    content: '';
-    background-image: url(img/separador.png);
-    display: block;
-    height: 30px;
-    width: 100px;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 .conferencia__contenedor p {
     font-family: var(--font-parrafo);
@@ -225,15 +225,7 @@ h2, h3 {
     padding: 15px;
     padding-top: 5rem;
 }
-.programa_evento h2::after {
-    content: '';
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url(../img/separador.png);
-    height: 30px;
-    width: 100px;
-    display: block;
-}
+
 @media (min-width: 768px) {
     .programa_evento {
         width: 70%;
@@ -318,16 +310,6 @@ h2, h3 {
 
 
 /****** Nuestros Invitados ******/
-.section_invitados h2::after {
-    content: '';
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url(../img/separador.png);
-    height: 30px;
-    width: 100px;
-    display: block;
-}
-
 .invitados__contenedor {
     padding: 25px;
 }
@@ -386,7 +368,7 @@ h2, h3 {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    padding: 6rem 0;
+    padding: 6.5rem 0;
 }
 
 .contenedor__contador {
@@ -397,6 +379,10 @@ h2, h3 {
 
 .contador__div {
     text-align: center;
+}
+
+.contador__div .numero {
+    font-size: 7rem;
 }
 
 .contador__div h3 {
@@ -417,23 +403,13 @@ h2, h3 {
 
 /*********** Precios **********  */
 
-.precios__contenedor {
-    padding: 25px;
-}
-.precios__title h2::after {
-    content: '';
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url(../img/separador.png);
-    height: 30px;
-    width: 100px;
-    display: block;
-}
+.precios__contenedor { padding: 25px; }
 
 .contenedor__precios__lista {
     display: grid;
     gap: 2rem 4rem;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-items: center;
 }
 
 .precios__lista:nth-child(2n) .button{
@@ -444,7 +420,8 @@ h2, h3 {
 .precios__lista {
     border: 1px solid #e1e1e1;
     text-align: center;
-    transition: transform .3s ease;
+    transition: transform .3s ease, box-shadow .3s ease;
+    width: 85%;
 }
 
 .precios__lista:hover {
@@ -496,3 +473,71 @@ h2, h3 {
     color: var(--color-primary);
 }
 
+
+
+/******** Mapa-Ubicacion ********/
+
+.section_mapa {
+    height: 30rem;
+    background-color: aquamarine;
+}
+
+.item_testimonials {
+    border: 1px solid #e1e1e1;
+    background-color: #fff;
+    padding: 0 1.7rem 0 3.5rem;
+    width: 95%;
+}
+.contenedor__testimonials { padding: .8rem 2rem; }
+
+.testimonials__lista {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-items: center;
+}
+
+.item_testimonials blockquote {
+    margin: .5rem;
+    padding: 1rem 1.3rem;
+    position: relative;
+    font-family: var(--font-parrafo);
+}
+
+.item_testimonials blockquote p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    word-spacing: 3px;
+    text-align: justify;
+}
+
+.item_testimonials blockquote .icono {
+    position: absolute;
+    left: -2rem;
+    font-size: 2rem;
+    color: var(--color-primary);
+}
+
+.info__testimonial {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 12px;
+}
+
+.info__testimonial cite {
+    color: var(--color-primary);
+    font-family: var(--font-titles);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.info__testimonial cite span {
+    text-transform: initial;
+    color: #000;
+}
+
+.info__testimonial img {
+    width: 60px;
+    clip-path: circle(50% at 50% 50%);
+}
