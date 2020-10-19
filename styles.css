@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Raleway:wght@400;500;700&display=swap');
+
 html {
     box-sizing: border-box;
     font-size: 62.5%; /** 1rem=10px **/
@@ -310,9 +313,8 @@ h2::after {
 
 
 /****** Nuestros Invitados ******/
-.invitados__contenedor {
-    padding: 25px;
-}
+.section_invitados { padding: 2.5rem 2.2rem 6rem; }
+
 
 .invitados_img {
     position: relative;
@@ -386,11 +388,10 @@ h2::after {
 }
 
 .contador__div h3 {
+    color: #fff;
     margin: 1rem 0 0;
     font-size: 1.6rem;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: var(--font-titles);
+    font-weight: 400;
 }
 
 /* @media (min-width: ) {
@@ -403,7 +404,7 @@ h2::after {
 
 /*********** Precios **********  */
 
-.precios__contenedor { padding: 25px; }
+.section_precios { padding: 2.5rem 2.2rem 6rem; }
 
 .contenedor__precios__lista {
     display: grid;
@@ -482,12 +483,10 @@ h2::after {
     background-color: aquamarine;
 }
 
-.item_testimonials {
-    border: 1px solid #e1e1e1;
-    background-color: #fff;
-    padding: 0 1.7rem 0 3.5rem;
-    width: 95%;
-}
+
+/******** Testimoniales *********/
+.section_testimonials { padding: 3rem 1rem 6rem}
+
 .contenedor__testimonials { padding: .8rem 2rem; }
 
 .testimonials__lista {
@@ -495,6 +494,13 @@ h2::after {
     gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     justify-items: center;
+}
+
+.item_testimonials {
+    border: 1px solid #e1e1e1;
+    background-color: #fff;
+    padding: 0 1.7rem 0 3.5rem;
+    width: 95%;
 }
 
 .item_testimonials blockquote {
@@ -540,4 +546,110 @@ h2::after {
 .info__testimonial img {
     width: 60px;
     clip-path: circle(50% at 50% 50%);
+}
+
+
+/********* Newsletter ********/
+.section_newsletter {
+    padding: 4rem 2rem;
+    background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url(img/bg-newsletter.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.newsletter__text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.newsletter__text p {
+    margin: 0 0 .5rem;
+    font-size: 1.2rem;
+    font-family: var(--font-parrafo);
+    text-transform: lowercase;
+    color: #fff;
+}
+
+.newsletter__text h3 {
+    font-family: var(--font-parrafo);
+    font-weight: 700;
+    font-size: 4rem;
+    margin: 0;
+    color: #fff;
+}
+
+.newsletter__text .button {
+    background-color: transparent;
+    border-color: #fff;
+    padding: .8rem 4rem;
+    font-size: 1.4rem;
+}
+
+
+/******* Cuenta Regresiva *******/
+.section_cuenta_regresiva { padding: 2rem 1rem;}
+
+.cuenta_regresiva_contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-items: center;
+    gap: 2rem;
+}
+
+.cuenta_regresiva_contenedor .cuenta { text-align: center; }
+
+.cuenta h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+/******* Footer *******/
+.site_footer { 
+    padding: 2.5rem; 
+    background-color: #353535;
+}
+
+.footer__contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-items: center;
+    gap: 1.5rem 4rem;
+    color: #fff;
+}
+
+.footer_about {text-align: justify;}
+
+.footer_div h3 {
+    font-weight: 500;
+    font-size: 2.3rem;
+    text-align: left;
+}
+
+.footer_div span {
+    color: var(--color-primary);
+}
+
+.footer_div p {
+    font-size: 1.2rem;
+    font-family: var(--font-parrafo);
+    line-height: 1.6;
+    margin: .8rem 0;
+}
+
+.footer_redes {
+    width: 100%;
+}
+
+.footer_redes_nav {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 1rem 3rem;
+}
+
+.footer_redes_nav .icono {
+    font-size: 2rem;
+    color: #fff;
 }
