@@ -7,8 +7,8 @@ html {
 }
 
 :root {
-    --font-titles: 'Oswald', sans-serif;
-    --font-parrafo: 'Raleway', sans-serif;
+    --font-primary: 'Oswald', sans-serif;
+    --font-secondary: 'Raleway', sans-serif;
     --color-primary: #fe4918;
 }
 
@@ -25,7 +25,7 @@ img {
 
 h2, h3 {
     font-size: 3.2rem;
-    font-family: var(--font-titles);
+    font-family: var(--font-primary);
     text-transform: uppercase;
     text-align: center;
 }
@@ -51,7 +51,7 @@ h2::after {
     padding: 10px 30px;
     color: #fff;
     text-transform: uppercase;
-    font-family: var(--font-titles);
+    font-family: var(--font-primary);
     text-decoration: none;
     font-size: 1.7rem;
     margin-top: 20px;
@@ -62,7 +62,7 @@ h2::after {
 .numero {
     margin: 0;
     color: var(--color-primary);
-    font-family: var(--font-titles);
+    font-family: var(--font-primary);
     font-weight: 400;
     font-size: 6rem;
     padding: .5rem 0;
@@ -72,76 +72,70 @@ h2::after {
 /* ******************** */
 
 .section_header {
-    position: relative;
     background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(img/header.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     height: 60rem;
-    display: flex;
-    align-items: center;
-}
-.header__texto {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    bottom: 90px;
-}
-.header__redes-sociales {
-    position: absolute;
-    top: 0;
-    left: 40%;
-    right: 50%;
+    padding: 3rem 1rem;
 }
 
-.header__redes-sociales ul{
-    padding-top: 3rem;
-    list-style: none;
+.contenedor_redes_sociales {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+}
+
+.header__redes_sociales_nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 2.6rem;
 }
-.header__redes-sociales ul>li {
-    margin: 11px;
-    font-size: 2.5rem;
+
+.header__redes_sociales_nav li {
+    padding: .8rem;
+    margin: 0 .5rem;
 }
-.header__redes-sociales .icono {
+
+.header__redes_sociales .icono {
     color: #fff;
 }
-.header__fecha-ubicacion {
+.header__texto_fecha_ubicacion {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 6rem;
 }
-.header__fecha-ubicacion p{
+.header__texto_fecha_ubicacion > p{
     margin: 0 2rem;
     font-size: 1.5rem;
     color: #fff;
-    font-family: var(--font-parrafo);
+    font-family: var(--font-secondary);
     text-transform: uppercase;
     font-weight: 600;
 }
-.header__fecha-ubicacion .icono {
+.header__texto_fecha_ubicacion .icono {
     color: var(--color-primary);
     font-size: 2.4rem;
     margin: 0 .5rem;
 }
 
+.header__texto {
+    color: #fff;
+    padding: 2rem 0;
+    font-family: var(--font-secondary);
+    text-align: center;
+}
+
 .header__texto h1 {
     margin: 3rem 0 5rem ;
-    color: #fff;
+    font-weight: 700;
     font-size: 4rem;
-    text-align: center;
-    font-weight: 600;
-    font-family: var(--font-parrafo);
     text-transform: uppercase;
 }
 
-.header__texto h3 {
-    text-align: center;
-    color: #fff;
-    font-family: var(--font-parrafo);
+.header__texto .frase {
+    margin: 0;
     font-weight: 400;
     font-size: 1.7rem;
 }
@@ -152,43 +146,46 @@ h2::after {
     background-color: #353535;
     position: sticky;
     top: 0;
-    z-index: 111111;
+    z-index: 1111;
 }
 .menu__navigation ul{
-    padding: 20px 10px;
+    padding: 2rem 1rem;
     margin: 0;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.menu__navigation .menu__responsive {
+.menu__navigation_responsive {
     width: 55px;
     text-align: right;
 }
-.menu__navigation .menu__responsive span{
+.menu__navigation_responsive span{
     height: 5px;
     margin-bottom: 6px;
     background-color: #fff;
     display: block;
 }
-/* .menu__navigation ul a {
-    padding: 20px;
-    text-decoration: none;
-    font-size: 2rem;
-    font-family: var(--font-titles);
-    font-weight: 500;
+.menu__navigation ul a {
+    font-family: var(--font-primary);
     text-transform: uppercase;
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    border-radius: 5px;
     color: #fff;
-} */
-/* .menu__navigation ul li:last-child a{
-    border: 2px solid red;
-} */
-
-
-.menu__navigation .logo {
-    width: 85%;
+    transition: background-color .1s ease-in,
+                color .3s ease-in;
 }
+
+.menu__navigation ul a:hover { background-color: var(--color-primary); }
+.menu__navigation ul li:last-child a:hover { color: #fff; }
+.menu__navigation ul li:last-child a{
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.menu__navigation .logo { width: 85%; }
 
 
 
@@ -199,7 +196,7 @@ h2::after {
 }
 
 .conferencia__contenedor p {
-    font-family: var(--font-parrafo);
+    font-family: var(--font-secondary);
     font-size: 1.5rem;
     word-spacing: 2px;
     line-height: 22px;
@@ -252,7 +249,7 @@ h2::after {
     text-align: center;
     color: #000;
     text-decoration: none;
-    font-family: var(--font-titles);
+    font-family: var(--font-primary);
     margin-bottom: 10px;
     font-size: 1.8rem;
     position: relative;
@@ -301,12 +298,12 @@ h2::after {
     border: none;
 }
 .detalle_evento h3 {
-    font-family: var(--font-parrafo);
+    font-family: var(--font-secondary);
     font-size: 1.8rem;
     color: var(--color-primary);
 }
 .detalle_evento p {
-    font-family: var(--font-parrafo);
+    font-family: var(--font-secondary);
     font-size: 1.6rem;
     margin-bottom: 20px;
 }
@@ -450,7 +447,7 @@ h2::after {
 }
 
 .item_precio ul {
-    font-family: var(--font-titles);
+    font-family: var(--font-primary);
     font-size: 1.4rem;
     list-style: none;
     padding: 0;
@@ -507,7 +504,7 @@ h2::after {
     margin: .5rem;
     padding: 1rem 1.3rem;
     position: relative;
-    font-family: var(--font-parrafo);
+    font-family: var(--font-secondary);
 }
 
 .item_testimonials blockquote p {
@@ -533,7 +530,7 @@ h2::after {
 
 .info__testimonial cite {
     color: var(--color-primary);
-    font-family: var(--font-titles);
+    font-family: var(--font-primary);
     text-transform: uppercase;
     font-size: 1.2rem;
 }
@@ -567,13 +564,13 @@ h2::after {
 .newsletter__text p {
     margin: 0 0 .5rem;
     font-size: 1.2rem;
-    font-family: var(--font-parrafo);
+    font-family: var(--font-secondary);
     text-transform: lowercase;
     color: #fff;
 }
 
 .newsletter__text h3 {
-    font-family: var(--font-parrafo);
+    font-family: var(--font-secondary);
     font-weight: 700;
     font-size: 4rem;
     margin: 0;
@@ -633,7 +630,7 @@ h2::after {
 
 .footer_div p {
     font-size: 1.2rem;
-    font-family: var(--font-parrafo);
+    font-family: var(--font-secondary);
     line-height: 1.6;
     margin: .8rem 0;
 }
