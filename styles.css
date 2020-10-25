@@ -255,10 +255,10 @@ h2::after {
     display: none;
 }
 
-.menu__navigation__ul--desktop:hover {
+.menu__navigation__ul--desktop a:hover {
     background-color: var(--color-primary); 
 }
-.menu__navigation__ul--desktop:last-child:hover {
+.menu__navigation__ul--desktop a:last-child:hover {
     color: #fff; 
 }
 
@@ -297,6 +297,7 @@ h2::after {
 
 .programa__video {
     width: 100%;
+    overflow: hidden;
 }
 
 .programa__video .video {
