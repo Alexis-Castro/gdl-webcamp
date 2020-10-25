@@ -10,84 +10,89 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section class="section_header">
-        <div class="contenedor contenedor_redes_sociales">
-            <header class="header__redes_sociales">
-                <nav class="header__redes_sociales_nav">
-                    <li><a href=""><i class="icono fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="icono fab fa-twitter"></i></a></li>
-                    <li><a href=""><i class="icono fab fa-pinterest-p"></i></a></li>
-                    <li><a href=""><i class="icono fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="icono fab fa-youtube"></i></a></li>
-                </nav>
-            </header>
-            <div class="header__texto">
-                <div class="header__texto_fecha_ubicacion">
-                    <p><i class="icono fas fa-calendar-alt"></i>10-12 Dic</p>
-                    <p><i class="icono fas fa-map-marker-alt"></i>Chiclayo-PE</p>
+    <section class="header">
+        <div class="contenedor">
+            <div class="portada">
+                <header class="portada__social">
+                    <nav class="social__navigation">
+                        <li class="social__navigation--li"><a href="#"><i class="icono fab fa-facebook-f"></i></a></li>
+                        <li class="social__navigation--li"><a href="#"><i class="icono fab fa-twitter"></i></a></li>
+                        <li class="social__navigation--li"><a href="#"><i class="icono fab fa-pinterest-p"></i></a></li>
+                        <li class="social__navigation--li"><a href="#"><i class="icono fab fa-instagram"></i></a></li>
+                        <li class="social__navigation--li"><a href="#"><i class="icono fab fa-youtube"></i></a></li>
+                    </nav>
+                </header>
+                <div class="portada__principal">
+                    <div class="principal__evento">
+                        <p class="evento__p"><i class="icono fas fa-calendar-alt"></i>10-12 Dic</p>
+                        <p class="evento__p"><i class="icono fas fa-map-marker-alt"></i>Chiclayo-PE</p>
+                    </div>
+                    <div class="principal__text">
+                        <h1 class="text__titulo">Cixwebcamp</h1>
+                        <p class="text__frase">La mejor conferencia de <strong>diseño web</strong> </p>
+                    </div>
                 </div>
-                <h1>Cixwebcamp</h1>
-                <p class="frase">La mejor conferencia de <strong>diseño web</strong> </p>
             </div>
         </div>
     </section>
 
-    <section class="section_menu">
+    <section class="menu">
         <div class="contenedor">
             <nav class="menu__navigation">
-                <ul>
-                    <li><img class="logo" src="img/logo.svg" alt="logo-gdlwebcamp"></li>
-                    <li class="menu__navigation_responsive">
+                <ul class="menu__navigation__ul">
+                    <li class="menu__navigation__ul--logo"><a href=""><img class="logo" src="img/logo.svg" alt="logo-gdlwebcamp"></a></li>
+                    <li class="menu__navigation__ul--responsive" id="menu_mobile">
                         <span></span>
                         <span></span>
                         <span></span>
                     </li>
-                    <!-- <li><a href="#">Conferencia</a></li>
-                    <li><a href="#">Calendario</a></li>
-                    <li><a href="#">Invitados</a></li>
-                    <li><a href="#">Reservaciones</a></li> -->
+                    <li class="menu__navigation__ul--desktop"><a href="#">Conferencia</a></li>
+                    <li class="menu__navigation__ul--desktop"><a href="#">Calendario</a></li>
+                    <li class="menu__navigation__ul--desktop"><a href="#">Invitados</a></li>
+                    <li class="menu__navigation__ul--desktop"><a href="#">Reservaciones</a></li>
                 </ul>
             </nav>
         </div>
     </section>
 
-    <section class="section_conferencia">
+    <section class="conferencia">
         <div class="contenedor conferencia__contenedor">
             <h2>La mejor conferencia de diseño web en español</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum ratione ipsam tempore voluptas eaque maxime ab dolorum optio quisquam consequatur quod, veniam fugit quam eligendi. Sapiente rerum earum quas eos. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab labore repudiandae quos error dicta. Dolore perspiciatis laudantium quos a ad consequuntur eaque necessitatibus provident voluptatum ea, neque alias fuga veritatis.</p>
+            <p class="conferencia__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum ratione ipsam tempore voluptas eaque maxime ab dolorum optio quisquam consequatur quod, veniam fugit quam eligendi. Sapiente rerum earum quas eos. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab labore repudiandae quos error dicta. Dolore perspiciatis laudantium quos a ad consequuntur eaque necessitatibus provident voluptatum ea, neque alias fuga veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, minima? Amet voluptate suscipit odio impedit ex consectetur</p>
         </div>
     </section>
 
-    <section class="section_programa">
+    <section class="programa">
         <div class="contenedor__programa">
-            <div class="video-content">
-                <video class="video" src="video/video.mp4" autoplay loop></video>
+            <div class="programa__video">
+                <video class="video video__disabled"autoplay loop>
+                    <source src="video/video.mp4" type="video/mp4">
+                    <source src="video/video.ogv" type="video/ogv">
+                    <source src="video/video.webm" type="video/webm">
+                </video>
             </div>
-            <div class="contenido_programa">
-                <div class="contenedor">
-                    <div class="programa_evento">
-                        <h2>Programa del Evento</h2>
-                        <nav class="menu__programa">
-                            <a href="#talleres" class="item activo"><i class="icono fas fa-code"></i>Talleres</a>
-                            <a href="#conferencias" class="item"><i class="icono fas fa-comment"></i>Conferencias</a>
-                            <a href="#seminarios" class="item"><i class="icono fas fa-university"></i>Seminarios</a>
-                        </nav>
-          
-                        <div id="talleres" class="info_curso">
-                            <div class="detalle_evento">
-                                <h3>HTML5, CSS3 y JavaScript</h3>
-                                <p><i class="icono icono fas fa-clock"></i> 16:00 hrs</p>
-                                <p><i class="icono icono fas fa-calendar-alt"></i> 10 de Dic</p>
-                                <p><i class="icono icono fas fa-user-alt"></i> Alexis Castro Puse</p>
-                            </div>
-                            <div class="detalle_evento">
-                                <h3>Responsive Web Design</h3>
-                                <p><i class="icono fas fa-clock"></i> 10:00 hrs</p>
-                                <p><i class="icono fas fa-calendar-alt"></i> 10 de Dic</p>
-                                <p><i class="icono fas fa-user-alt"></i> Alexis Castro Puse</p>
-                            </div>
-                            <a href="#" class="button">Ver todos</a>
-                        </div>
+            <div class="programa__info_evento">
+                <h2>Programa del Evento</h2>
+                <nav class="menu__programa">
+                    <a href="#talleres" class="item activo"><i class="icono fas fa-code"></i>Talleres</a>
+                    <a href="#conferencias" class="item"><i class="icono fas fa-comment"></i>Conferencias</a>
+                    <a href="#seminarios" class="item"><i class="icono fas fa-university"></i>Seminarios</a>
+                </nav>
+                <div id="talleres" class="info__programa">
+                    <div class="detalle_evento">
+                        <h3>HTML5, CSS3 y JavaScript</h3>
+                        <p><i class="icono far fa-clock"></i>16:00 hrs</p>
+                        <p><i class="icono far fa-calendar-alt"></i>10 de Dic</p>
+                        <p><i class="icono far fa-user"></i>Alexis Castro Puse</p>
+                    </div>
+                    <div class="detalle_evento">
+                        <h3>Responsive Web Design</h3>
+                        <p><i class="icono far fa-clock"></i>10:00 hrs</p>
+                        <p><i class="icono far fa-calendar-alt"></i>10 de Dic</p>
+                        <p><i class="icono far fa-user"></i>Alexis Castro Puse</p>
+                    </div>
+                    <a href="#" class="button">Ver todos</a>
+                </div>
 <!-- 
                         <div id="conferencias" class="info_curso ocultar">
                             <div class="detalle_evento">
@@ -119,19 +124,17 @@
                             </div>
                             <a href="#" class="button">Ver todos</a>
                         </div> -->
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <section class="section_invitados">
+    <section class="invitados">
         <div class="contenedor">
             <div class="invitados__contenedor">
-                <div class="invitados_title">
+                <div class="invitados__title">
                     <h2>Nuestros Invitados</h2>
                 </div>
-                <div class="invitados_img">
+                <div class="invitados__img_container">
                     <div class="invitados__div">
                         <img src="img/invitado1.jpg" alt="Rafael Bautista">
                         <h3>Rafael Bautista</h3>
@@ -162,8 +165,8 @@
         </div>
     </section>
 
-    <section class="section_contador">
-        <div class="contenedor contenedor__contador">
+    <section class="contador">
+        <div class="contenedor container__contador">
             <div class="contador__div">
                 <p class="numero">6</p>
                 <h3>Invitados</h3>
@@ -183,15 +186,15 @@
         </div>
     </section>
 
-    <section class="section_precios">
+    <section class="precios">
         <div class="contenedor">
             <div class="precios__contenedor">
-                <div class="precios__title">
+                <div class="precios__contenedor_title">
                     <h2>Precios</h2>
                 </div>
-                <div class="contenedor__precios__lista">
-                    <div class="precios__lista">
-                        <div class="item_precio">
+                <div class="precios__contenedor_lista">
+                    <div class="precios__info">
+                        <div class="item__precio_info">
                             <h3>Pase por 1 Día</h3>
                             <p class="numero">$30</p>
                             <ul>
@@ -202,8 +205,8 @@
                             <a href="#" class="button">Comprar</a>
                         </div>
                     </div>
-                    <div class="precios__lista">
-                        <div class="item_precio">
+                    <div class="precios__info">
+                        <div class="item__precio_info">
                             <h3>Todos los Días</h3>
                             <p class="numero">$50</p>
                             <ul>
@@ -214,8 +217,8 @@
                             <a href="#" class="button">Comprar</a>
                         </div>
                     </div>
-                    <div class="precios__lista">
-                        <div class="item_precio">
+                    <div class="precios__info">
+                        <div class="item__precio_info">
                             <h3>Pase por 2 Días</h3>
                             <p class="numero">$45</p>
                             <ul>
@@ -231,11 +234,11 @@
         </div>
     </section>
 
-    <section class="section_mapa" id="ubicacion">
+    <section class="mapa" id="ubicacion">
         hola
     </section>
 
-    <section class="section_testimonials">
+    <section class="testimonials">
         <div class="contenedor">
             <div class="testimonials__title">
                 <h2>Testimoniales</h2>
@@ -274,7 +277,7 @@
         </div>
     </section>
 
-    <section class="section_newsletter">
+    <section class="newsletter">
         <div class="contenedor">
             <div class="newsletter__text">
                 <p>Registrate al newsletter</p>
@@ -284,7 +287,7 @@
         </div>
     </section>
 
-    <section class="section_cuenta_regresiva">
+    <section class="cuenta_regresiva">
         <div class="contenedor">
             <div class="cuenta_regresiva_title">
                 <h2>Faltan</h2>
@@ -310,7 +313,7 @@
         </div>
     </section>
 
-    <footer class="site_footer">
+    <footer class="footer">
         <section class="contenedor">
             <div class="footer__contenedor">
                 <div class="footer_about footer_div">
@@ -337,5 +340,7 @@
         </section>
     </footer>
     
+
+    <script src="js/main.js"></script>
 </body>
 </html>
