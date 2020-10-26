@@ -36,6 +36,11 @@ h2, h3 {
         font-size: 3rem;
     }
 }
+@media (min-width: 992px) {
+    h2 {
+        font-size: 3.3rem;
+    }
+}
 
 
 h2::after {
@@ -280,9 +285,25 @@ h2::after {
 .conferencia__p {
     font-family: var(--font-secondary);
     font-size: 1rem;
-    line-height: 1.3rem;
+    /* line-height: 1.3rem; */
 }
-
+@media (min-width: 768px) {
+    .conferencia__p {
+        font-size: 1.3rem;
+    }
+}
+@media (min-width: 992px) {
+    .conferencia__p {
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+}
+@media (min-width: 1200px) {
+    .conferencia__p {
+        font-size: 1.7rem;
+        line-height: 1.4;
+    }
+}
 
 
 
@@ -395,14 +416,17 @@ h2::after {
     font-size: 1.4rem;
     margin-right: 1rem;
 }
+@media (min-width: 992px) {
+    .menu__programa .icono,
+    .detalle_evento .icono { font-size: 1.8rem}
+}
+
 .ocultar {
     display: none;
 }
 
 @media (min-width: 768px) {
-    .info__programa .button {
-        margin-top: 1rem;
-    }
+    .info__programa .button { margin-top: 1rem; }
 }
 
 
@@ -427,6 +451,10 @@ h2::after {
     font-family: var(--font-secondary);
     font-size: 1.2rem;
     margin: 0 0 1rem;
+}
+@media (min-width: 992px) {
+    .detalle_evento p { font-size: 1.6rem }
+    .detalle_evento h3 { font-size: 1.8rem }
 }
 
 
@@ -497,28 +525,21 @@ h2::after {
     row-gap: 3rem;
 }
 @media (min-width: 1200px) {
-    .container__contador {
-        padding: 7rem 0;
-    }
+    .container__contador { padding: 7rem 0; }
 }
 
 .contador__div { text-align: center; }
 
 .contador__div .numero { font-size: 4.3rem; }
+
 @media (min-width: 768px) {
-    .contador__div .numero {
-        font-size: 6.2rem;
-    }
+    .contador__div .numero { font-size: 6.2rem; }
 }
 @media (min-width: 992px) {
-    .contador__div .numero {
-        font-size: 6.8rem;
-    }
+    .contador__div .numero { font-size: 6.8rem; }
 }
 @media (min-width: 1200px) {
-    .contador__div .numero {
-        font-size: 6vw;
-    }
+    .contador__div .numero { font-size: 6vw; }
 }
 
 .contador__div h3 {
@@ -529,19 +550,13 @@ h2::after {
 }
 
 @media (min-width: 768px) {
-    .contador__div h3 {
-        font-size: 1.5rem;
-    }
+    .contador__div h3 { font-size: 1.5rem; }
 }
 @media (min-width: 992px) {
-    .contador__div h3 {
-        font-size: 1.7rem;
-    }
+    .contador__div h3 { font-size: 1.7rem; }
 }
 @media (min-width: 1200px) {
-    .contador__div h3 {
-        font-size: 1.9rem;
-    }
+    .contador__div h3 { font-size: 1.9rem; }
 }
 
 
@@ -599,8 +614,21 @@ h2::after {
 
 .item__precio_info .numero {
     color: #000;
-    font-size: 4.2rem;
+    font-size: 4.5rem;
     padding: 1.5rem;
+}
+
+@media (min-width: 992px) {
+    .item__precio_info h3 { font-size: 1.5rem}
+    .item__precio_info .numero {
+        font-size: 5.5rem;
+    }
+}
+@media (min-width: 1200px) {
+    .item__precio_info h3 { font-size: 1.7rem}
+    .item__precio_info .numero {
+        font-size: 6rem;
+    }
 }
 
 .item__precio_info > ul {
@@ -608,12 +636,22 @@ h2::after {
     font-size: 1.1rem;
     list-style: none;
     padding: 0;
-    margin: 1rem;
+    margin: 1.2rem 1rem;
+}
+@media (min-width: 992px) {
+    .item__precio_info > ul {
+        font-size: 1.3rem;
+    }
+}
+@media (min-width: 1200px) {
+    .item__precio_info > ul {
+        font-size: 1.5rem;
+    }
 }
 
 .item__precio_info ul > li {
     text-transform: uppercase;
-    padding-bottom: 2rem;
+    padding-bottom: 2.3rem;
     color: #868686;
 }
 
@@ -626,6 +664,15 @@ h2::after {
     margin-top: 0;
     background-color: #fff;
     color: var(--color-primary);
+}
+@media (min-width: 992px) {
+    .item__precio_info .button { font-size: 1.4rem; }
+}
+@media (min-width: 1200px) {
+    .item__precio_info .button {
+        font-size: 1.6rem;
+        padding: 1rem 3.3rem;
+    }
 }
 
 
@@ -728,20 +775,12 @@ h2::after {
 }
 
 @media (min-width: 768px) {
-    .newsletter__text {
-        padding: 2rem 0;
-    }
-    .newsletter__text p {
-        font-size: 1.5rem;
-    }
+    .newsletter__text { padding: 2rem 0; }
+    .newsletter__text p { font-size: 1.8rem; }
 }
 @media (min-width: 1200px) {
-    .newsletter__text {
-        padding: 6rem 0
-    }
-    .newsletter__text p {
-        font-size: 1.5rem;
-    }
+    .newsletter__text { padding: 8rem 0; }
+    .newsletter__text p { font-size: 2rem; }
 }
 
 .newsletter__text h3 {
@@ -752,14 +791,10 @@ h2::after {
     color: #fff;
 }
 @media (min-width: 768px) {
-    .newsletter__text h3 {
-        font-size: 4rem;
-    }
+    .newsletter__text h3 { font-size: 4rem; }
 }
 @media (min-width: 1200px) {
-    .newsletter__text h3 {
-        font-size: 4.3vw;
-    }
+    .newsletter__text h3 { font-size: 4.8vw; }
 }
 
 .newsletter__text .button {
@@ -767,6 +802,12 @@ h2::after {
     border-color: #fff;
     padding: .8rem 4rem;
     font-size: 1.4rem;
+}
+@media (min-width: 1200px) {
+    .newsletter__text .button {
+        padding: 1rem 5rem;
+        font-size: 1.8rem;
+    }
 }
 
 
@@ -785,17 +826,23 @@ h2::after {
         padding-bottom: 3.5rem;
     }
 }
+@media (min-width: 992px) {
+    .cuenta_regresiva_contenedor { padding: 4rem 0; }
+    .cuenta_regresiva {
+        padding: 4rem 1rem;
+    }
+}
 
 .cuenta .numero { font-size: 4rem;}
 
 @media (min-width: 768px) {
-    .cuenta .numero { font-size: 5rem}
-}
-@media (min-width: 992px) {
     .cuenta .numero { font-size: 5.5rem}
 }
+@media (min-width: 992px) {
+    .cuenta .numero { font-size: 6.3rem}
+}
 @media (min-width: 1200px) {
-    .cuenta .numero { font-size: 6rem}
+    .cuenta .numero { font-size: 7.5rem}
 }
 
 .cuenta_regresiva_contenedor .cuenta { text-align: center; }
@@ -836,6 +883,15 @@ h2::after {
     font-size: 2.2rem;
     text-align: left;
 }
+@media (min-width: 768px) {
+    .footer_div h3 { font-size: 2.4rem; }
+}
+@media (min-width: 992px) {
+    .footer_div h3 { font-size: 2.6rem; }
+}
+@media (min-width: 1200px) {
+    .footer_div h3 { font-size: 2.8rem; }
+}
 
 .footer_div span {
     color: var(--color-primary);
@@ -846,6 +902,15 @@ h2::after {
     font-family: var(--font-secondary);
     line-height: 1.6;
     margin: .8rem 0;
+}
+@media (min-width: 768px) {
+    .footer_div p { font-size: 1.2rem; }
+}
+@media (min-width: 992px) {
+    .footer_div p { font-size: 1.4rem; }
+}
+@media (min-width: 1200px) {
+    .footer_div p { font-size: 1.6rem; }
 }
 
 .footer_redes {
