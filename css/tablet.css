@@ -2,8 +2,128 @@
 @media (min-width: 768px) {
     h2 { font-size: 3rem; }
 }
+
 @media (min-width: 768px) {
     .header {
         height: 70rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .social__navigation {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .principal__evento {
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 768px) {
+    .text__titulo {
+        font-size: 7rem;
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .conferencia__p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .video {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .programa__info_evento {
+        position: absolute;
+        top: 1rem;
+        left: 3rem;
+        padding: 1rem 1rem;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .programa__info_evento h2 {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu__programa {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--color-primary);
+    }
+}
+
+@media (min-width: 768px) {
+    .menu__programa .item {
+        border-bottom: none;
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .info__programa .button { margin-top: 1rem; }
+}
+
+@media (min-width: 768px) {
+    .contador__div .numero { font-size: 6.3rem; }
+}
+
+@media (min-width: 768px) {
+    .contador__div h3 { font-size: 1.5rem; }
+}
+
+@media (min-width: 768px) {
+    .mapa { height: 32rem; }
+}
+
+@media (min-width: 768px) {
+    .newsletter__text { padding: 2rem 0; }
+    .newsletter__text p { font-size: 1.8rem; }
+}
+
+@media (min-width: 768px) {
+    .newsletter__text h3 { font-size: 5.5rem; }
+}
+
+@media (min-width: 768px) {
+    .cuenta_regresiva_contenedor {
+        padding-bottom: 3.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .cuenta .numero { font-size: 5.8rem}
+}
+
+@media (min-width: 768px) {
+    .cuenta h3 { font-size: 2rem}
+}
+
+@media (min-width: 768px) {
+    .footer_div h3 { font-size: 2.6rem; }
+}
+
+@media (min-width: 768px) {
+    .footer_div p { font-size: 1.4rem; }
+}
+
+@media (min-width: 768px) {
+    .copyright__footer { font-size: 1.3rem; }
+}
+
+@media (min-width: 768px) {
+    .footer_redes_nav .icono {
+        font-size: 2.2rem;
     }
 }

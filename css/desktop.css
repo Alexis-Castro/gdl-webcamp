@@ -2,6 +2,242 @@
 @media (min-width: 992px) {
     h2 { font-size: 3.3rem; }
 }
+
 @media (min-width: 1200px) {
     h2 { font-size: 3.6rem; }
+}
+
+@media (min-width: 992px) {
+    .social__navigation {
+        font-size: 3.4rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .social__navigation {
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .text__titulo {
+        font-size: 8.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .menu__navigation__ul {
+        padding: 2rem 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .menu__navigation__ul--desktop {
+        display: inline-block;
+    }
+    .menu__navigation__ul--responsive {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .text__titulo {
+        font-size: 12rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .text__frase {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header {
+        height: 100vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    .evento__p {
+        font-size: 1.6rem;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+    .conferencia__p {
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+}
+
+@media (min-width: 1200px) {
+    .conferencia__p {
+        font-size: 1.7rem;
+        line-height: 1.4;
+    }
+}
+
+@media (min-width: 992px) {
+    .programa__info_evento {
+        left: 5rem;
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .menu__programa .icono,
+    .detalle_evento .icono { font-size: 1.8rem}
+}
+
+@media (min-width: 992px) {
+    .detalle_evento p { font-size: 1.6rem }
+    .detalle_evento h3 { font-size: 1.8rem }
+}
+
+@media (min-width: 1200px) {
+    .container__contador { padding: 7rem 0; }
+}
+
+@media (min-width: 992px) {
+    .contador__div .numero { font-size: 6.8rem; }
+}
+
+@media (min-width: 1200px) {
+    .contador__div .numero { font-size: 6vw; }
+}
+
+@media (min-width: 992px) {
+    .contador__div h3 { font-size: 1.7rem; }
+}
+
+@media (min-width: 1200px) {
+    .contador__div h3 { font-size: 1.9rem; }
+}
+
+@media (min-width: 1200px) {
+    .precios__info { 
+        width: 95%;
+    }
+}
+
+@media (min-width: 992px) {
+    .item__precio_info h3 { font-size: 1.5rem}
+    .item__precio_info .numero {
+        font-size: 5.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .item__precio_info h3 { font-size: 1.7rem}
+    .item__precio_info .numero {
+        font-size: 6rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .item__precio_info > ul {
+        font-size: 1.3rem;
+    }
+}
+@media (min-width: 1200px) {
+    .item__precio_info > ul {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .item__precio_info .button { font-size: 1.4rem; }
+}
+
+@media (min-width: 1200px) {
+    .item__precio_info .button {
+        font-size: 1.6rem;
+        padding: 1rem 3.3rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .mapa { height: 34rem; }
+}
+
+@media (min-width: 1200px) {
+    .mapa { height: 36rem; }
+}
+
+@media (min-width: 1200px) {
+    .newsletter__text { padding: 8rem 0; }
+    .newsletter__text p { font-size: 2rem; }
+}
+
+@media (min-width: 1200px) {
+    .newsletter__text h3 { font-size: 4.8vw; }
+}
+
+@media (min-width: 1200px) {
+    .newsletter__text .button {
+        padding: 1rem 5rem;
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .cuenta_regresiva_contenedor { padding: 4rem 0; }
+    .cuenta_regresiva {
+        padding: 4rem 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .cuenta .numero { font-size: 6.3rem}
+}
+
+@media (min-width: 1200px) {
+    .cuenta .numero { font-size: 7.5rem}
+}
+
+@media (min-width: 992px) {
+    .cuenta h3 { font-size: 2.1rem}
+}
+
+@media (min-width: 1200px) {
+    .cuenta h3 { font-size: 2.3rem}
+}
+
+@media (min-width: 992px) {
+    .footer_div h3 { font-size: 2.7rem; }
+}
+
+@media (min-width: 1200px) {
+    .footer_div h3 { font-size: 2.9rem; }
+}
+
+@media (min-width: 992px) {
+    .footer_div p { font-size: 1.5rem; }
+}
+
+@media (min-width: 1200px) {
+    .footer_div p { font-size: 1.7rem; }
+}
+
+@media (min-width: 992px) {
+    .copyright__footer { font-size: 1.5rem; }
+}
+
+@media (min-width: 1200px) {
+    .copyright__footer { font-size: 1.8rem; }
+}
+
+@media (min-width: 992px) {
+    .footer_redes_nav .icono {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer_redes_nav .icono {
+        font-size: 2.8rem;
+    }
 }
