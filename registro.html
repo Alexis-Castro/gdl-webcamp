@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservaciones</title>
+    <script src="https://kit.fontawesome.com/8bc589691d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section class="menu">
+        <div class="contenedor">
+            <nav class="menu__navigation">
+                <ul class="menu__navigation__ul">
+                    <li class="menu__navigation__ul--logo"><a href="index.html"><img class="logo" src="img/logo.svg" alt="logo-gdlwebcamp"></a></li>
+                    <li class="menu__navigation__ul--responsive" id="menu_mobile">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </li>
+                    <li class="menu__navigation__ul--desktop"><a href="#">Conferencia</a></li>
+                    <li class="menu__navigation__ul--desktop"><a href="#">Calendario</a></li>
+                    <li class="menu__navigation__ul--desktop"><a href="#">Invitados</a></li>
+                    <li class="menu__navigation__ul--desktop"><a href="registro.html">Reservaciones</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <section class="registro_usuarios seccion">
+        <div class="contenedor">
+            <h2>Registro de Usuarios</h2>
+            <form class="form__registro" id="registro" action="" method="post">
+                <div id="datos_usuarios" class="form__registro_contenedor">
+                    <div class="form__registro_campo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre"/>
+                    </div>
+                    <div class="form__registro_campo">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Tu Apellido"/>
+                    </div>
+                    <div class="form__registro_campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Tu E-mail"/>
+                    </div>
+                    <div id="error"></div>
+                </div>
+                <section class="precios seccion">
+                    <div class="contenedor">
+                        <h3>Elige el número de boletos</h3>
+                        <div class="precios__contenedor_lista">
+                            <div class="precios__info">
+                                <div class="item__precio_info">
+                                    <h3>Pase por 1 Día</h3>
+                                    <p class="numero">$30</p>
+                                    <ul>
+                                        <li><i class="icono fas fa-check"></i>Bocadillos Gratis</li>
+                                        <li><i class="icono fas fa-check"></i>Todas las Conferencias</li>
+                                        <li><i class="icono fas fa-check"></i>Todos los Talleres</li>
+                                    </ul>
+                                    <a href="#" class="button">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="precios__info">
+                                <div class="item__precio_info">
+                                    <h3>Todos los Días</h3>
+                                    <p class="numero">$50</p>
+                                    <ul>
+                                        <li><i class="icono fas fa-check"></i>Bocadillos Gratis</li>
+                                        <li><i class="icono fas fa-check"></i>Todas las Conferencias</li>
+                                        <li><i class="icono fas fa-check"></i>Todos los Talleres</li>
+                                    </ul>
+                                    <a href="#" class="button">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="precios__info">
+                                <div class="item__precio_info">
+                                    <h3>Pase por 2 Días</h3>
+                                    <p class="numero">$45</p>
+                                    <ul>
+                                        <li><i class="icono fas fa-check"></i>Bocadillos Gratis</li>
+                                        <li><i class="icono fas fa-check"></i>Todas las Conferencias</li>
+                                        <li><i class="icono fas fa-check"></i>Todos los Talleres</li>
+                                    </ul>
+                                    <a href="#" class="button">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </form>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <section class="contenedor">
+            <div class="footer__contenedor">
+                <div class="footer_about footer_div">
+                    <h3>Sobre <span>Cixwebcamp</span> </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, quis. Tempora cupiditate maiores vitae eaque. Quis, vitae illo quidem minus, sed blanditiis quae quisquam eos temporibus unde atque numquam. Inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora labore culpa eveniet soluta commodi consequatur delectus, velit ab pariatur ad repellendus dignissimos perferendis maxime.</p>
+                </div>
+                <div class="footer_tweets footer_div">
+                    <h3>Ultimos <span>Tweets</span></h3>
+                    <p>Veritatis nostrum placeat, magni molestias quos unde corporis aperiam soluta voluptate iusto, atque ad optio quam iure sit?</p>
+                    <p>Veritatis nostrum placeat, magni molestias quos unde corporis aperiam soluta voluptate iusto, atque ad optio quam iure sit?</p>
+                    <p>Veritatis nostrum placeat, magni molestias quos unde corporis aperiam soluta voluptate iusto, atque ad optio quam iure sit?</p>
+                </div>
+                <div class="footer_redes footer_div">
+                    <h3>Redes <span>Sociales</span></h3>
+                    <nav class="footer_redes_nav">
+                        <a href="#"><i class="icono fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="icono fab fa-twitter"></i></a>
+                        <a href="#"><i class="icono fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="icono fab fa-youtube"></i></a>
+                        <a href="#"><i class="icono fab fa-instagram"></i></a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <section class="copyright__footer">
+            <p>Todos los derechos reservados CIXWEBCAMP 2020 &copy;</p>
+        </section>
+    </footer>
+    
+</body>
+</html>

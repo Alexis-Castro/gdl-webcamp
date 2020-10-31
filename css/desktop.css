@@ -1,0 +1,7 @@
+
+@media (min-width: 992px) {
+    h2 { font-size: 3.3rem; }
+}
+@media (min-width: 1200px) {
+    h2 { font-size: 3.6rem; }
+}

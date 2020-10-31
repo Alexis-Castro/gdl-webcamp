@@ -1,6 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Raleway:wght@400;500;700&display=swap');
-
 html {
     box-sizing: border-box;
     font-size: 62.5%; /** 1rem=10px **/
@@ -8,7 +6,7 @@ html {
 
 :root {
     --font-primary: 'Oswald', sans-serif;
-    --font-secondary: 'Raleway', sans-serif;
+    --font-secondary: 'PT Sans', sans-serif;
     --color-primary: #fe4918;
 }
 
@@ -19,29 +17,12 @@ body { background-color: #f2f2f2; }
 img { max-width: 100%; }
 
 h2, h3 {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
+    font-weight: 500;
     font-family: var(--font-primary);
     text-transform: uppercase;
     text-align: center;
 }
-
-@media (min-width: 576px) {
-    h2 {
-        font-size: 2.7rem;
-    }
-}
-
-@media (min-width: 768px) {
-    h2 {
-        font-size: 3rem;
-    }
-}
-@media (min-width: 992px) {
-    h2 {
-        font-size: 3.3rem;
-    }
-}
-
 
 h2::after {
     content: '';
@@ -82,23 +63,21 @@ h2::after {
     padding: .5rem 0;
 }
 
+.seccion {
+    padding: 3rem 1rem;
+}
+
 
 /* ******************** */
 
 .header {
-    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(img/header.jpg);
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/header.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 60rem;
-    padding: 3rem 1rem;
 }
 
-@media (min-width: 768px) {
-    .header {
-        height: 70rem;
-    }
-}
 @media (min-width: 1200px) {
     .header {
         height: 100vh;
@@ -146,7 +125,7 @@ h2::after {
     color: #fff;
     font-family: var(--font-secondary);
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 @media (min-width: 1200px) {
@@ -186,7 +165,7 @@ h2::after {
 }
 @media (min-width: 1200px) {
     .text__titulo {
-        font-size: 10rem;
+        font-size: 12rem;
     }
 }
 .text__frase {
@@ -279,13 +258,12 @@ h2::after {
 /* ******** Conferencia ********* */
 .conferencia__contenedor {
     text-align: center;
-    padding: 2rem;
+    /* padding: 2rem; */
 }
 
 .conferencia__p {
     font-family: var(--font-secondary);
     font-size: 1rem;
-    /* line-height: 1.3rem; */
 }
 @media (min-width: 768px) {
     .conferencia__p {
@@ -458,10 +436,7 @@ h2::after {
 }
 
 
-/****** Nuestros Invitados ******/
-.invitados { padding: 2.5rem 2.2rem 6rem; }
-
-
+/********* Nuestros Invitados ********/
 .invitados__img_container {
     position: relative;
     display: grid;
@@ -469,6 +444,7 @@ h2::after {
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     justify-content: center;
     justify-items: center;
+    padding-bottom: 5rem;
 }
 
 .invitados__div > img {
@@ -511,12 +487,11 @@ h2::after {
 
 /********* Contador talleres, dias, y mas... **********/
 .contador {
-    background: linear-gradient( rgba(0,0,0,.4), rgba(0,0,0,.4) ), url(img/bg-resumen.jpg);
+    background: linear-gradient( rgba(0,0,0,.4), rgba(0,0,0,.4) ), url(../img/bg-resumen.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    padding: 6.5rem 0;
 }
 
 .container__contador {
@@ -563,7 +538,7 @@ h2::after {
 
 /*********** Precios **********  */
 
-.precios { padding: 2.5rem 1.2rem 6rem; }
+/* .precios { padding: 2.5rem 1.2rem 6rem; } */
 
 .precios__contenedor_lista {
     display: grid;
@@ -571,6 +546,7 @@ h2::after {
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     justify-content: center;
     justify-items: center;
+    padding-bottom: 5rem;
 }
 
 .precios__lista:nth-child(2n) .button{
@@ -583,6 +559,11 @@ h2::after {
     text-align: center;
     transition: transform .3s ease, box-shadow .3s ease;
     width: 80%;
+}
+@media (min-width: 1200px) {
+    .precios__info { 
+        width: 95%;
+    }
 }
 
 .precios__info:nth-child(2n) .button {
@@ -632,7 +613,8 @@ h2::after {
 }
 
 .item__precio_info > ul {
-    font-family: var(--font-primary);
+    font-family: var(--font-secondary);
+    font-weight: 400;
     font-size: 1.1rem;
     list-style: none;
     padding: 0;
@@ -653,6 +635,7 @@ h2::after {
     text-transform: uppercase;
     padding-bottom: 2.3rem;
     color: #868686;
+    line-height: 1.5;
 }
 
 .item__precio_info .icono {
@@ -684,11 +667,19 @@ h2::after {
     height: 30rem;
     background-color: aquamarine;
 }
+@media (min-width: 768px) {
+    .mapa { height: 32rem; }
+}
+@media (min-width: 992px) {
+    .mapa { height: 34rem; }
+}
+@media (min-width: 1200px) {
+    .mapa { height: 36rem; }
+}
+
 
 /******** Testimoniales *********/
-.testimonials { padding: 3rem 1rem 6rem}
-
-.contenedor__testimonials { padding: .8rem 2rem; }
+.contenedor__testimonials { padding: .8rem 1.5rem; }
 
 .testimonials__lista {
     display: grid;
@@ -696,7 +687,7 @@ h2::after {
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     justify-content: center;
     justify-items: center;
-    
+    padding-bottom: 5rem;
 }
 
 .item_testimonials {
@@ -754,10 +745,11 @@ h2::after {
 /********* Newsletter ********/
 .newsletter {
     padding: 4rem 2rem;
-    background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url(img/bg-newsletter.jpg);
+    background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url(../img/bg-newsletter.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .newsletter__text {
@@ -852,19 +844,19 @@ h2::after {
     font-weight: 400;
 }
 @media (min-width: 768px) {
-    .cuenta h3 { font-size: 1.8rem}
+    .cuenta h3 { font-size: 1.9rem}
 }
 @media (min-width: 992px) {
-    .cuenta h3 { font-size: 2rem}
+    .cuenta h3 { font-size: 2.1rem}
 }
 @media (min-width: 1200px) {
-    .cuenta h3 { font-size: 2.2rem}
+    .cuenta h3 { font-size: 2.3rem}
 }
 
 
 /******* Footer *******/
 .footer { 
-    padding: 2.5rem; 
+    padding: 2.5rem 2rem 1rem; 
     background-color: #353535;
 }
 
@@ -884,13 +876,13 @@ h2::after {
     text-align: left;
 }
 @media (min-width: 768px) {
-    .footer_div h3 { font-size: 2.4rem; }
+    .footer_div h3 { font-size: 2.5rem; }
 }
 @media (min-width: 992px) {
-    .footer_div h3 { font-size: 2.6rem; }
+    .footer_div h3 { font-size: 2.7rem; }
 }
 @media (min-width: 1200px) {
-    .footer_div h3 { font-size: 2.8rem; }
+    .footer_div h3 { font-size: 2.9rem; }
 }
 
 .footer_div span {
@@ -904,13 +896,13 @@ h2::after {
     margin: .8rem 0;
 }
 @media (min-width: 768px) {
-    .footer_div p { font-size: 1.2rem; }
+    .footer_div p { font-size: 1.3rem; }
 }
 @media (min-width: 992px) {
-    .footer_div p { font-size: 1.4rem; }
+    .footer_div p { font-size: 1.5rem; }
 }
 @media (min-width: 1200px) {
-    .footer_div p { font-size: 1.6rem; }
+    .footer_div p { font-size: 1.7rem; }
 }
 
 .footer_redes {
@@ -925,6 +917,52 @@ h2::after {
 }
 
 .footer_redes_nav .icono {
-    font-size: 2rem;
+    font-size: 1rem;
     color: #fff;
+}
+
+.copyright__footer {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: var(--font-secondary);
+    color: #fff;
+}
+
+.copyright__footer p { margin-bottom: 0; }
+
+@media (min-width: 768px) {
+    .copyright__footer { font-size: 1.2rem; }
+}
+@media (min-width: 992px) {
+    .copyright__footer { font-size: 1.5rem; }
+}
+@media (min-width: 1200px) {
+    .copyright__footer { font-size: 1.8rem; }
+}
+
+
+
+/* ***** Paginas Internas ****** */
+/* ********** Registro-Usuarios ********* */
+.form__registro {
+    font-size: 1.6rem;
+    font-family: var(--font-secondary);
+    font-weight: 600;
+}
+
+.form__registro_contenedor {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 2.5rem 1rem;
+}
+
+.form__registro_campo {
+    padding: 1.5rem 0;
+}
+
+.form__registro_campo > input {
+    padding: .5rem;
 }
