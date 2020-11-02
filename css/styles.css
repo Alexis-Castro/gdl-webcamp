@@ -14,7 +14,11 @@ html {
 
 body { background-color: #f2f2f2; }
 
-img { max-width: 100%; }
+img { 
+    max-width: 100%; 
+    height: auto; 
+    width: 100%;
+}
 
 h2, h3 {
     font-size: 2.7rem;
@@ -164,16 +168,27 @@ h2::after {
     align-items: center;
 }
 
+.menu__navigation__ul--logo { 
+    width: 80%; 
+}
+
+.menu__navigation__ul--logo .logo { 
+    width: 80%; 
+}
+
 .menu__navigation__ul--responsive {
-    width: 5.5rem;
+    width: 3.5rem;
     text-align: right;
 }
 
 .menu__navigation__ul--responsive span{
-    height: .5rem;
+    height: .4rem;
     margin-bottom: .6rem;
     background-color: #fff;
     display: block;
+}
+.menu__navigation__ul--responsive span:last-child {
+    margin-bottom: 0;
 }
 
 .menu__navigation__ul--desktop {
@@ -207,7 +222,6 @@ h2::after {
     border: 1px solid var(--color-primary);
     color: var(--color-primary);
 }
-.menu__navigation .logo { width: 85%; }
 
 
 
@@ -389,7 +403,7 @@ h2::after {
 
 .container__contador {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     row-gap: 3rem;
 }
 
@@ -410,35 +424,10 @@ h2::after {
 
 .precios__contenedor_lista {
     display: grid;
-    gap: 2rem 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
-    justify-content: center;
-    justify-items: center;
+    gap: 2rem 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 32rem));
+    justify-content: space-evenly;
     padding-bottom: 5rem;
-}
-
-.precios__lista:nth-child(2n) .button{
-    background-color: var(--color-primary);
-    color: #fff;
-}
-
-.precios__info {
-    border: 1px solid #e1e1e1;
-    text-align: center;
-    transition: transform .3s ease, box-shadow .3s ease;
-    width: 80%;
-}
-
-
-.precios__info:nth-child(2n) .button {
-    background-color: var(--color-primary);
-    color: #fff;
-}
-
-.precios__info:hover {
-    transform: scale(1.1);
-    border: 1px solid var(--color-primary);
-    box-shadow: 0 0 20px #666;
 }
 
 .item__precio_info {
@@ -448,6 +437,10 @@ h2::after {
     justify-content: center;
     padding: 3.5rem .5rem;
     background-color: #fff;
+
+    border: 1px solid #e1e1e1;
+    text-align: center;
+    transition: transform .3s ease, box-shadow .3s ease;
 }
 
 .item__precio_info h3 {
@@ -488,6 +481,20 @@ h2::after {
     margin-top: 0;
     background-color: #fff;
     color: var(--color-primary);
+}
+
+.item__precio_info:nth-child(2n) .button{
+    background-color: var(--color-primary);
+    color: #fff;
+}
+.item__precio_info:nth-child(2n) {
+    transform: scale(1.06);
+}
+
+.item__precio_info:hover {
+    border: 1px solid var(--color-primary);
+    transform: scale(1.06);
+    box-shadow: 0 0 15px #666;
 }
 
 
@@ -611,7 +618,7 @@ h2::after {
 
 .cuenta_regresiva_contenedor {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     justify-items: center;
     gap: 2rem;
 }

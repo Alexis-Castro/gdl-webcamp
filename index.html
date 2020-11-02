@@ -42,160 +42,170 @@
         <div class="contenedor">
             <nav class="menu__navigation">
                 <ul class="menu__navigation__ul">
-                    <li class="menu__navigation__ul--logo"><a href=""><img class="logo" src="img/logo.svg" alt="logo-gdlwebcamp"></a></li>
+                    <li class="menu__navigation__ul--logo">
+                        <a href="index.html">
+                            <img class="logo" width="180" height="50" src="img/logo.svg" alt="logo-gdlwebcamp">
+                        </a>
+                    </li>
                     <li class="menu__navigation__ul--responsive" id="menu_mobile">
                         <span></span>
                         <span></span>
                         <span></span>
                     </li>
-                    <li class="menu__navigation__ul--desktop"><a href="#">Conferencia</a></li>
-                    <li class="menu__navigation__ul--desktop"><a href="#">Calendario</a></li>
-                    <li class="menu__navigation__ul--desktop"><a href="#">Invitados</a></li>
-                    <li class="menu__navigation__ul--desktop"><a href="registro.html">Reservaciones</a></li>
+                    <li class="menu__navigation__ul--desktop">
+                        <a href="#">Conferencia</a>
+                    </li>
+                    <li class="menu__navigation__ul--desktop">
+                        <a href="#">Calendario</a>
+                    </li>
+                    <li class="menu__navigation__ul--desktop">
+                        <a href="#">Invitados</a>
+                    </li>
+                    <li class="menu__navigation__ul--desktop">
+                        <a href="registro.html">Reservaciones</a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </section>
 
-    <section class="conferencia seccion">
-        <div class="contenedor conferencia__contenedor">
-            <h2>La mejor conferencia de diseño web en español</h2>
-            <p class="conferencia__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum ratione ipsam tempore voluptas eaque maxime ab dolorum optio quisquam consequatur quod, veniam fugit quam eligendi. Sapiente rerum earum quas eos. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab labore repudiandae quos error dicta. Dolore perspiciatis laudantium quos a ad consequuntur eaque necessitatibus provident voluptatum ea, neque alias fuga veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, minima? Amet voluptate suscipit odio impedit ex consectetur</p>
-        </div>
-    </section>
-
-    <section class="programa">
-        <div class="contenedor__programa contenedor">
-            <div class="programa__video">
-                <video autoplay loop class="video video__disabled">
-                    <source src="video/video.mp4" type="video/mp4">
-                    <source src="video/video.ogv" type="video/ogv">
-                    <source src="video/video.webm" type="video/webm">
-                </video>
+    <main class="main">
+        <section class="conferencia seccion">
+            <div class="contenedor conferencia__contenedor">
+                <h2>La mejor conferencia de diseño web en español</h2>
+                <p class="conferencia__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum ratione ipsam tempore voluptas eaque maxime ab dolorum optio quisquam consequatur quod, veniam fugit quam eligendi. Sapiente rerum earum quas eos. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab labore repudiandae quos error dicta. Dolore perspiciatis laudantium quos a ad consequuntur eaque necessitatibus provident voluptatum ea, neque alias fuga veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, minima? Amet voluptate suscipit odio impedit ex consectetur</p>
             </div>
-            <div class="programa__info_evento">
-                <h2>Programa del Evento</h2>
-                <nav class="menu__programa">
-                    <a href="#talleres" class="item activo"><i class="icono fas fa-code"></i>Talleres</a>
-                    <a href="#conferencias" class="item"><i class="icono fas fa-comment"></i>Conferencias</a>
-                    <a href="#seminarios" class="item"><i class="icono fas fa-university"></i>Seminarios</a>
-                </nav>
-                <div id="talleres" class="info__programa">
-                    <div class="detalle_evento">
-                        <h3>HTML5, CSS3 y JavaScript</h3>
-                        <p><i class="icono far fa-clock"></i>16:00 hrs</p>
-                        <p><i class="icono far fa-calendar-alt"></i>10 de Dic</p>
-                        <p><i class="icono far fa-user"></i>Alexis Castro Puse</p>
-                    </div>
-                    <div class="detalle_evento">
-                        <h3>Responsive Web Design</h3>
-                        <p><i class="icono far fa-clock"></i>10:00 hrs</p>
-                        <p><i class="icono far fa-calendar-alt"></i>10 de Dic</p>
-                        <p><i class="icono far fa-user"></i>Alexis Castro Puse</p>
-                    </div>
-                    <a href="#" class="button">Ver todos</a>
+        </section>
+    
+        <section class="programa">
+            <div class="contenedor__programa contenedor">
+                <div class="programa__video">
+                    <video autoplay loop class="video video__disabled">
+                        <source src="video/video.mp4" type="video/mp4">
+                        <source src="video/video.webm" type="video/webm">
+                        <source src="video/video.ogv" type="video/ogv">
+                    </video>
                 </div>
-<!-- 
-                        <div id="conferencias" class="info_curso ocultar">
-                            <div class="detalle_evento">
-                                <h3>Como ser freelancer</h3>
-                                <p><i class="icono fas fa-clock"></i> 10:00 hrs</p>
-                                <p><i class="icono fas fa-calendar-alt"></i> 10 de Dic</p>
-                                <p><i class="icono fas fa-user-alt"></i> Gregorio Sanchez</p>
-                            </div>
-                            <div class="detalle_evento">
-                                <h3>Tecnologias del Futuro</h3>
-                                <p><i class="icono fas fa-clock"></i> 17:00 hrs</p>
-                                <p><i class="icono fas fa-calendar-alt"></i> 10 de Dic</p>
-                                <p><i class="icono fas fa-user-alt"></i> Susan Sanchez</p>
-                            </div>
-                            <a href="#" class="button">Ver todos</a>
+                <div class="programa__info_evento">
+                    <h2>Programa del Evento</h2>
+                    <nav class="menu__programa">
+                        <a href="#talleres" class="item activo"><i class="icono fas fa-code"></i>Talleres</a>
+                        <a href="#conferencias" class="item"><i class="icono fas fa-comment"></i>Conferencias</a>
+                        <a href="#seminarios" class="item"><i class="icono fas fa-university"></i>Seminarios</a>
+                    </nav>
+                    <div id="talleres" class="info__programa">
+                        <div class="detalle_evento">
+                            <h3>HTML5, CSS3 y JavaScript</h3>
+                            <p><i class="icono far fa-clock"></i>16:00 hrs</p>
+                            <p><i class="icono far fa-calendar-alt"></i>10 de Dic</p>
+                            <p><i class="icono far fa-user"></i>Alexis Castro Puse</p>
                         </div>
-                        <div id="seminarios" class="info_curso ocultar">
-                            <div class="detalle_evento">
-                                <h3>Diseño UI/UX para móviles</h3>
-                                <p><i class="icono fas fa-clock"></i> 17:00 hrs</p>
-                                <p><i class="icono fas fa-calendar-alt"></i> 11 de Dic</p>
-                                <p><i class="icono fas fa-user-alt"></i> Harold Garcia</p>
+                        <div class="detalle_evento">
+                            <h3>Responsive Web Design</h3>
+                            <p><i class="icono far fa-clock"></i>10:00 hrs</p>
+                            <p><i class="icono far fa-calendar-alt"></i>10 de Dic</p>
+                            <p><i class="icono far fa-user"></i>Alexis Castro Puse</p>
+                        </div>
+                        <a href="#" class="button">Ver todos</a>
+                    </div>
+    <!-- 
+                            <div id="conferencias" class="info_curso ocultar">
+                                <div class="detalle_evento">
+                                    <h3>Como ser freelancer</h3>
+                                    <p><i class="icono fas fa-clock"></i> 10:00 hrs</p>
+                                    <p><i class="icono fas fa-calendar-alt"></i> 10 de Dic</p>
+                                    <p><i class="icono fas fa-user-alt"></i> Gregorio Sanchez</p>
+                                </div>
+                                <div class="detalle_evento">
+                                    <h3>Tecnologias del Futuro</h3>
+                                    <p><i class="icono fas fa-clock"></i> 17:00 hrs</p>
+                                    <p><i class="icono fas fa-calendar-alt"></i> 10 de Dic</p>
+                                    <p><i class="icono fas fa-user-alt"></i> Susan Sanchez</p>
+                                </div>
+                                <a href="#" class="button">Ver todos</a>
                             </div>
-                            <div class="detalle_evento">
-                                <h3>Aprende a programar en una mañana</h3>
-                                <p><i class="icono fas fa-clock"></i> 10:00 hrs</p>
-                                <p><i class="icono fas fa-calendar-alt"></i> 11 de Dic</p>
-                                <p><i class="icono fas fa-user-alt"></i> Susana Rivera</p>
-                            </div>
-                            <a href="#" class="button">Ver todos</a>
-                        </div> -->
+                            <div id="seminarios" class="info_curso ocultar">
+                                <div class="detalle_evento">
+                                    <h3>Diseño UI/UX para móviles</h3>
+                                    <p><i class="icono fas fa-clock"></i> 17:00 hrs</p>
+                                    <p><i class="icono fas fa-calendar-alt"></i> 11 de Dic</p>
+                                    <p><i class="icono fas fa-user-alt"></i> Harold Garcia</p>
+                                </div>
+                                <div class="detalle_evento">
+                                    <h3>Aprende a programar en una mañana</h3>
+                                    <p><i class="icono fas fa-clock"></i> 10:00 hrs</p>
+                                    <p><i class="icono fas fa-calendar-alt"></i> 11 de Dic</p>
+                                    <p><i class="icono fas fa-user-alt"></i> Susana Rivera</p>
+                                </div>
+                                <a href="#" class="button">Ver todos</a>
+                            </div> -->
+                </div>
             </div>
-        </div>
-    </section>
-
-    <section class="invitados seccion">
-        <div class="contenedor">
-            <div class="invitados__contenedor">
-                <div class="invitados__title">
+        </section>
+    
+        <section class="invitados seccion">
+            <div class="contenedor">
+                <article class="invitados__contenedor">
                     <h2>Nuestros Invitados</h2>
+                    <div class="invitados__img_container">
+                        <div class="invitados__div">
+                            <img src="img/invitado1.jpg" width="260" height="175" alt="Rafael Bautista">
+                            <h3>Rafael Bautista</h3>
+                        </div>
+                        <div class="invitados__div">
+                            <img src="img/invitado2.jpg" width="260" height="175" alt="Shari Herrera">
+                            <h3>Shari Herrera</h3>
+                        </div>
+                        <div class="invitados__div">
+                            <img src="img/invitado3.jpg" width="260" height="175" alt="Gregorio Sanchez">
+                            <h3>Gregorio Sanchez</h3>
+                        </div>
+                        <div class="invitados__div">
+                            <img src="img/invitado4.jpg" width="260" height="175" alt="Susana Rivera">
+                            <h3>Susana Rivera</h3>
+                        </div>
+                        <div class="invitados__div">
+                            <img src="img/invitado5.jpg" width="260" height="175" alt="Harold Garcia">
+                            <h3>Harold Garcia</h3>
+                        </div>
+                        <div class="invitados__div">
+                            <img src="img/invitado6.jpg" width="260" height="175" alt="Susan Sanchez">
+                            <h3>Susan Sanchez</h3>
+                        </div>
+                    </div>
+                </article>
+    
+            </div>
+        </section>
+    
+        <section class="contador seccion">
+            <div class="contenedor">
+                <div class="container__contador">
+                    <div class="contador__div">
+                        <p class="numero">6</p>
+                        <h3>Invitados</h3>
+                    </div>
+                    <div class="contador__div">
+                        <p class="numero">15</p>
+                        <h3>Talleres</h3>
+                    </div>
+                    <div class="contador__div">
+                        <p class="numero">3</p>
+                        <h3>Días</h3>
+                    </div>
+                    <div class="contador__div">
+                        <p class="numero">9</p>
+                        <h3>Conferencias</h3>
+                    </div>
                 </div>
-                <div class="invitados__img_container">
-                    <div class="invitados__div">
-                        <img src="img/invitado1.jpg" alt="Rafael Bautista">
-                        <h3>Rafael Bautista</h3>
-                    </div>
-                    <div class="invitados__div">
-                        <img src="img/invitado2.jpg" alt="Shari Herrera">
-                        <h3>Shari Herrera</h3>
-                    </div>
-                    <div class="invitados__div">
-                        <img src="img/invitado3.jpg" alt="Gregorio Sanchez">
-                        <h3>Gregorio Sanchez</h3>
-                    </div>
-                    <div class="invitados__div">
-                        <img src="img/invitado4.jpg" alt="Susana Rivera">
-                        <h3>Susana Rivera</h3>
-                    </div>
-                    <div class="invitados__div">
-                        <img src="img/invitado5.jpg" alt="Harold Garcia">
-                        <h3>Harold Garcia</h3>
-                    </div>
-                    <div class="invitados__div">
-                        <img src="img/invitado6.jpg" alt="Susan Sanchez">
-                        <h3>Susan Sanchez</h3>
-                    </div>
-                </div>
             </div>
-
-        </div>
-    </section>
-
-    <section class="contador seccion">
-        <div class="contenedor container__contador">
-            <div class="contador__div">
-                <p class="numero">6</p>
-                <h3>Invitados</h3>
-            </div>
-            <div class="contador__div">
-                <p class="numero">15</p>
-                <h3>Talleres</h3>
-            </div>
-            <div class="contador__div">
-                <p class="numero">3</p>
-                <h3>Días</h3>
-            </div>
-            <div class="contador__div">
-                <p class="numero">9</p>
-                <h3>Conferencias</h3>
-            </div>
-        </div>
-    </section>
-
-    <section class="precios seccion">
-        <div class="contenedor">
-            <div class="precios__contenedor">
-                <div class="precios__contenedor_title">
+        </section>
+    
+        <section class="precios seccion">
+            <div class="contenedor">
+                <article class="precios__contenedor">
                     <h2>Precios</h2>
-                </div>
-                <div class="precios__contenedor_lista">
-                    <div class="precios__info">
+                    <div class="precios__contenedor_lista">
                         <div class="item__precio_info">
                             <h3>Pase por 1 Día</h3>
                             <p class="numero">$30</p>
@@ -206,8 +216,6 @@
                             </ul>
                             <a href="#" class="button">Comprar</a>
                         </div>
-                    </div>
-                    <div class="precios__info">
                         <div class="item__precio_info">
                             <h3>Todos los Días</h3>
                             <p class="numero">$50</p>
@@ -218,8 +226,6 @@
                             </ul>
                             <a href="#" class="button">Comprar</a>
                         </div>
-                    </div>
-                    <div class="precios__info">
                         <div class="item__precio_info">
                             <h3>Pase por 2 Días</h3>
                             <p class="numero">$45</p>
@@ -231,53 +237,51 @@
                             <a href="#" class="button">Comprar</a>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
-    </section>
-
-    <section class="mapa" id="ubicacion">
-        hola
-    </section>
-
-    <section class="testimonials seccion">
-        <div class="contenedor">
-            <div class="testimonials__title">
+        </section>
+    
+        <section class="mapa" id="ubicacion">
+            hola
+        </section>
+    
+        <section class="testimonials seccion">
+            <article class="contenedor">
                 <h2>Testimoniales</h2>
-            </div>
-            <div class="contenedor__testimonials">
-                <div class="testimonials__lista">
-                    <div class="item_testimonials">
-                        <blockquote>
-                            <p><i class="icono fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod officia voluptate totam excepturi. Minima ut itaque corrupti odio? Modi vel eum nesciunt ratione nam facere aspernatur laborum autem porro aperiam.</p>
-                            <footer class="info__testimonial">
-                                <img src="img/testimonial.jpg" alt="imagen testimonial" width="60px">
-                                <cite>Oswaldo Aponte Escobedo <span>Diseñador en @prisma</span></cite>
-                            </footer>
-                        </blockquote>
-                    </div> <!--.testimonials-->
-                    <div class="item_testimonials">
-                        <blockquote>
-                            <p><i class="icono fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod officia voluptate totam excepturi. Minima ut itaque corrupti odio? Modi vel eum nesciunt ratione nam facere aspernatur laborum autem porro aperiam.</p>
-                            <footer class="info__testimonial">
-                                <img src="img/testimonial.jpg" alt="imagen testimonial" width="60px">
-                                <cite>Oswaldo Aponte Escobedo <span>Diseñador en @prisma</span></cite>
-                            </footer>
-                        </blockquote>
-                    </div> <!--.testimonials-->
-                    <div class="item_testimonials">
-                        <blockquote>
-                            <p><i class="icono fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod officia voluptate totam excepturi. Minima ut itaque corrupti odio? Modi vel eum nesciunt ratione nam facere aspernatur laborum autem porro aperiam.</p>
-                            <footer class="info__testimonial">
-                                <img src="img/testimonial.jpg" alt="imagen testimonial" width="60px">
-                                <cite>Oswaldo Aponte Escobedo <span>Diseñador en @prisma</span></cite>
-                            </footer>
-                        </blockquote>
-                    </div> <!--.testimonials-->
+                <div class="contenedor__testimonials">
+                    <div class="testimonials__lista">
+                        <div class="item_testimonials">
+                            <blockquote>
+                                <p><i class="icono fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod officia voluptate totam excepturi. Minima ut itaque corrupti odio? Modi vel eum nesciunt ratione nam facere aspernatur laborum autem porro aperiam.</p>
+                                <footer class="info__testimonial">
+                                    <img src="img/testimonial.jpg" alt="imagen testimonial" width="60" height="60">
+                                    <cite>Oswaldo Aponte Escobedo <span>Diseñador en @prisma</span></cite>
+                                </footer>
+                            </blockquote>
+                        </div> <!--.testimonials-->
+                        <div class="item_testimonials">
+                            <blockquote>
+                                <p><i class="icono fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod officia voluptate totam excepturi. Minima ut itaque corrupti odio? Modi vel eum nesciunt ratione nam facere aspernatur laborum autem porro aperiam.</p>
+                                <footer class="info__testimonial">
+                                    <img src="img/testimonial.jpg" alt="imagen testimonial" width="60" height="60">
+                                    <cite>Oswaldo Aponte Escobedo <span>Diseñador en @prisma</span></cite>
+                                </footer>
+                            </blockquote>
+                        </div> <!--.testimonials-->
+                        <div class="item_testimonials">
+                            <blockquote>
+                                <p><i class="icono fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod officia voluptate totam excepturi. Minima ut itaque corrupti odio? Modi vel eum nesciunt ratione nam facere aspernatur laborum autem porro aperiam.</p>
+                                <footer class="info__testimonial">
+                                    <img src="img/testimonial.jpg" alt="imagen testimonial" width="60" height="60">
+                                    <cite>Oswaldo Aponte Escobedo <span>Diseñador en @prisma</span></cite>
+                                </footer>
+                            </blockquote>
+                        </div> <!--.testimonials-->
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </article>
+        </section>
+    </main>
 
     <section class="newsletter">
         <div class="contenedor">
@@ -290,10 +294,8 @@
     </section>
 
     <section class="cuenta_regresiva">
-        <div class="contenedor">
-            <div class="cuenta_regresiva_title">
-                <h2>Faltan</h2>
-            </div>
+        <article class="contenedor">
+            <h2>Faltan</h2>
             <div class="cuenta_regresiva_contenedor">
                 <div class="cuenta cuenta_regresiva__dias ">
                     <p class="numero">80</p>
@@ -312,7 +314,7 @@
                     <h3>Segundos</h3>
                 </div> 
             </div>
-        </div>
+        </article>
     </section>
 
     <footer class="footer seccion">
