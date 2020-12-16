@@ -1,4 +1,10 @@
 
+@media (min-width: 1200px) {
+    .contenedor {
+        max-width: 144rem;
+    }
+}
+
 @media (min-width: 992px) {
     h2 { font-size: 3.3rem; }
 }
@@ -10,6 +16,9 @@
 
 /* ******** Header ******* */
 @media (min-width: 992px) {
+    .portada__principal .principal__evento {
+        justify-content: space-between;
+    }
     .portada__social .social__navigation {
         font-size: 3.4rem;
     }
@@ -22,16 +31,16 @@
         height: 100vh;
     }
     .portada__social .social__navigation {
-        font-size: 4rem;
+        font-size: 2.5vw;
     }
-    .principal__evento .evento__p {
-        font-size: 1.6rem;
+    .principal__evento .evento__p, .principal__evento .evento__p .icono {
+        font-size: 1.7vw;
     }
     .principal__text .text__titulo {
-        font-size: 12rem;
+        font-size: 8.5vw;
     }
     .principal__text .text__frase {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 }
 
@@ -41,11 +50,15 @@
     .menu__navigation {
         padding: 1.5rem 1rem;
     }
+    .menu__navigation__ul {
+        max-width: 100%;
+    }
     .menu__navigation__ul--logo .logo { 
         width: 25rem; 
     }    
     .menu__navigation__ul--desktop {
         display: inline-block;
+        margin: 0 1rem
     }
     .menu__navigation__ul--responsive {
         display: none;
@@ -98,12 +111,12 @@
 }
 
 
-
-
 /* ******* Contador ******** */
 @media (min-width: 992px) {
+
     .container__contador {
-        padding: 4rem 0;
+        grid-template-columns: repeat(auto-fit, minmax(21.5rem, 1fr));
+        padding: 6rem 0;
     }
     .contador__div .numero { font-size: 6.8rem; }
     .contador__div h3 { font-size: 1.7rem; }
@@ -113,7 +126,7 @@
     .contador .container__contador { 
         padding: 7rem 0; 
     }
-    .contador__div .numero { font-size: 6vw; }
+    .contador__div .numero { font-size: 5.6vw; }
     .contador__div h3 { font-size: 1.9rem; }
 }
 
@@ -121,7 +134,7 @@
 
 /* ******** Precio ********* */
 @media (min-width: 992px) {
-    .precios__contenedor_lista { padding: 3rem 0}
+    .precios__contenedor_lista { padding: 3rem 0; }
     .item__precio_info h3 { font-size: 1.6rem}
     .item__precio_info .numero {
         font-size: 5.8rem;
@@ -132,6 +145,7 @@
     .item__precio_info .button { font-size: 1.5rem; }
 }
 @media (min-width: 1200px) {
+    .precios__contenedor_lista { justify-content: space-evenly;}
     .item__precio_info h3 { font-size: 1.8rem}
     .item__precio_info .numero {
         font-size: 6.5rem;
@@ -172,15 +186,16 @@
 
 /* ******** Cuenta Regresiva ******* */
 @media (min-width: 992px) {
-    .cuenta_regresiva {
-        padding: 4rem 1rem;
+    .cuenta_regresiva_contenedor {
+        grid-template-columns: repeat(auto-fit, minmax(21.5rem, 1fr));
     }
+    .cuenta_regresiva {  padding: 4rem 1rem; }
     .cuenta .numero { font-size: 6.3rem}
     .cuenta h3 { font-size: 2.1rem}
 }
 
 @media (min-width: 1200px) {
-    .cuenta .numero { font-size: 7.5rem}
+    .cuenta .numero { font-size: 5.6vw}
     .cuenta h3 { font-size: 2.3rem}
 }
 

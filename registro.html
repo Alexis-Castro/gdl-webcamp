@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservaciones</title>
-    <script src="https://kit.fontawesome.com/8bc589691d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -32,69 +32,70 @@
     </section>
 
     <section class="registro_usuarios seccion">
-        <div class="contenedor">
-            <h2>Registro de Usuarios</h2>
-            <form class="form__registro" id="registro" action="" method="post">
-                <div id="datos_usuarios" class="form__registro_contenedor">
-                    <div class="form__registro_campo">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre"/>
-                    </div>
-                    <div class="form__registro_campo">
-                        <label for="apellido">Apellido</label>
-                        <input type="text" id="apellido" name="apellido" placeholder="Tu Apellido"/>
-                    </div>
-                    <div class="form__registro_campo">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" placeholder="Tu E-mail"/>
-                    </div>
-                    <div id="error"></div>
+        <h2>Registro de Usuarios</h2>
+        <form class="form__registro" id="registro" action="" method="post">
+            <section id="datos_usuarios" class="contenedor form__registro--contenedor">
+                <div class="form__registro_campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre"/>
                 </div>
-                <section class="precios seccion">
-                    <div class="contenedor">
-                        <h3>Elige el número de boletos</h3>
-                        <div class="precios__contenedor_lista">
-                            <div class="precios__info">
-                                <div class="item__precio_info">
-                                    <h3>Pase por 1 Día</h3>
-                                    <p class="numero">$30</p>
-                                    <ul>
-                                        <li><i class="icono fas fa-check"></i>Bocadillos Gratis</li>
-                                        <li><i class="icono fas fa-check"></i>Todas las Conferencias</li>
-                                        <li><i class="icono fas fa-check"></i>Todos los Talleres</li>
-                                    </ul>
-                                    <a href="#" class="button">Comprar</a>
-                                </div>
+                <div class="form__registro_campo">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Tu Apellido"/>
+                </div>
+                <div class="form__registro_campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Tu E-mail"/>
+                </div>
+                <!-- <div id="error"></div> -->
+            </section>
+            <section class="precios seccion">
+                <article class="precios__paquetes" id="paquetes">
+                    <h3>Elige el número de boletos</h3>
+                    <div class="precios__contenedor_lista">
+                        <div class="item__precio_info">
+                            <h3>Pase por 1 Día</h3>
+                            <p class="numero">$30</p>
+                            <ul>
+                                <li><i class="icono fas fa-check"></i>Bocadillos Gratis</li>
+                                <li><i class="icono fas fa-check"></i>Todas las Conferencias</li>
+                                <li><i class="icono fas fa-check"></i>Todos los Talleres</li>
+                            </ul>
+                            <div class="orden">
+                                <label for="pase_dia">Boletos deseados:</label>
+                                <input type="number" min="0" size="3" placeholder="0" name="pase_dia" id="pase_dia">
                             </div>
-                            <div class="precios__info">
-                                <div class="item__precio_info">
-                                    <h3>Todos los Días</h3>
-                                    <p class="numero">$50</p>
-                                    <ul>
-                                        <li><i class="icono fas fa-check"></i>Bocadillos Gratis</li>
-                                        <li><i class="icono fas fa-check"></i>Todas las Conferencias</li>
-                                        <li><i class="icono fas fa-check"></i>Todos los Talleres</li>
-                                    </ul>
-                                    <a href="#" class="button">Comprar</a>
-                                </div>
+                        </div>
+                        <div class="item__precio_info">
+                            <h3>Todos los Días</h3>
+                            <p class="numero">$50</p>
+                            <ul>
+                                <li><i class="icono fas fa-check"></i>Bocadillos Gratis</li>
+                                <li><i class="icono fas fa-check"></i>Todas las Conferencias</li>
+                                <li><i class="icono fas fa-check"></i>Todos los Talleres</li>
+                            </ul>
+                            <div class="orden">
+                                <label for="pase_completo">Boletos deseados:</label>
+                                <input type="number" min="0" size="3" placeholder="0" name="pase_completo" id="pase_completo">
                             </div>
-                            <div class="precios__info">
-                                <div class="item__precio_info">
-                                    <h3>Pase por 2 Días</h3>
-                                    <p class="numero">$45</p>
-                                    <ul>
-                                        <li><i class="icono fas fa-check"></i>Bocadillos Gratis</li>
-                                        <li><i class="icono fas fa-check"></i>Todas las Conferencias</li>
-                                        <li><i class="icono fas fa-check"></i>Todos los Talleres</li>
-                                    </ul>
-                                    <a href="#" class="button">Comprar</a>
-                                </div>
+                        </div>
+                        <div class="item__precio_info">
+                            <h3>Pase por 2 Días</h3>
+                            <p class="numero">$45</p>
+                            <ul>
+                                <li><i class="icono fas fa-check"></i>Bocadillos Gratis</li>
+                                <li><i class="icono fas fa-check"></i>Todas las Conferencias</li>
+                                <li><i class="icono fas fa-check"></i>Todos los Talleres</li>
+                            </ul>
+                            <div class="orden">
+                                <label for="pase_dos_dias">Boletos deseados:</label>
+                                <input type="number" min="0" size="3" placeholder="0" name="pase_dos_dias" id="pase_dos_dias">
                             </div>
                         </div>
                     </div>
-                </section>
-            </form>
-        </div>
+                </article> <!--paquetes-->
+            </section>
+        </form>
     </section>
 
 

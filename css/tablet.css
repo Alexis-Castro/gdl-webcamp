@@ -23,6 +23,9 @@
 
 /* ******* Menu ******** */
 @media (min-width: 768px) {
+    .menu__navigation__ul {
+        max-width: 70rem;
+    }
     .menu__navigation__ul--logo .logo { 
         width: 60%;
     }
@@ -107,5 +110,5 @@
     .copyright__footer { font-size: 1.3rem; }
     .footer_redes_nav .icono {
         font-size: 2.2rem;
-        }
+    }
 }

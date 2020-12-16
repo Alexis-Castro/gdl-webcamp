@@ -159,13 +159,20 @@ h2::after {
     z-index: 1111;
 }
 
+.menu__navigation {
+    padding: 0.8rem;
+}
+
 .menu__navigation__ul{
     padding: 1.5rem .8rem;
     margin: 0;
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    max-width: 55rem;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .menu__navigation__ul--logo { 
@@ -173,7 +180,7 @@ h2::after {
 }
 
 .menu__navigation__ul--logo .logo { 
-    width: 80%; 
+    width: 70%;
 }
 
 .menu__navigation__ul--responsive {
@@ -262,7 +269,7 @@ h2::after {
 }
 
 .programa__info_evento {
-    max-width: 80%;
+    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
     padding: 2rem 2rem 5rem;
@@ -274,11 +281,13 @@ h2::after {
 }
 
 .menu__programa {
+    width: 100%;
     padding: 0 1rem;
+    display: table;
 }
 
 .menu__programa .item {
-    display: block; 
+    display: table-cell; 
     text-align: center;
     color: #000;
     text-decoration: none;
@@ -403,18 +412,18 @@ h2::after {
 
 .container__contador {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
     row-gap: 3rem;
 }
 
 .contador__div { text-align: center; }
 
-.contador__div .numero { font-size: 4.6rem; }
+.contador__div .numero { font-size: 5rem; }
 
 .contador__div h3 {
     color: #fff;
     margin: 1rem 0 0;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-weight: 400;
 }
 
@@ -423,14 +432,20 @@ h2::after {
 /*********** Precios **********  */
 
 .precios__contenedor_lista {
-    display: grid;
-    gap: 2rem 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 32rem));
-    justify-content: space-evenly;
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
     padding-bottom: 5rem;
 }
 
 .item__precio_info {
+    position: relative;
+    scroll-snap-align: center;
+    margin: 0 2.5rem;
+    width: 70%;
+    min-width: 25rem;
+    max-width: 35rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -618,9 +633,9 @@ h2::after {
 
 .cuenta_regresiva_contenedor {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
     justify-items: center;
-    gap: 2rem;
+    row-gap: 3rem;
 }
 
 .cuenta .numero { font-size: 5rem;}
@@ -703,13 +718,14 @@ h2::after {
     font-weight: 600;
 }
 
-.form__registro_contenedor {
+.form__registro--contenedor {
     background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 2.5rem 1rem;
+    border-radius: 5px;
 }
 
 .form__registro_campo {
