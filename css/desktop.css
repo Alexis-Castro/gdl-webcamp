@@ -6,18 +6,18 @@
 }
 
 @media (min-width: 992px) {
-    h2 { font-size: 3.3rem; }
+    h2 { font-size: 2.8rem; }
 }
 
 @media (min-width: 1200px) {
-    h2 { font-size: 3.6rem; }
+    h2 { font-size: 3rem; }
 }
 
 
 /* ******** Header ******* */
 @media (min-width: 992px) {
     .portada__principal .principal__evento {
-        justify-content: space-between;
+        justify-content: space-around;
     }
     .portada__social .social__navigation {
         font-size: 3.4rem;
@@ -31,25 +31,22 @@
         height: 100vh;
     }
     .portada__social .social__navigation {
-        font-size: 2.5vw;
+        font-size: 2.7rem;
     }
     .principal__evento .evento__p, .principal__evento .evento__p .icono {
-        font-size: 1.7vw;
+        font-size: 1.7rem;
     }
     .principal__text .text__titulo {
-        font-size: 8.5vw;
+        font-size: 9.5rem;
     }
     .principal__text .text__frase {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 }
 
 
 /* ********* Menu ********* */
 @media (min-width: 992px) {
-    .menu__navigation {
-        padding: 1.5rem 1rem;
-    }
     .menu__navigation__ul {
         max-width: 100%;
     }
@@ -84,6 +81,7 @@
 }
 @media (min-width: 1200px) {
     .conferencia__contenedor .conferencia__p {
+        margin: 1rem 7rem;
         font-size: 1.7rem;
         line-height: 1.4;
     }
@@ -96,20 +94,45 @@
         left: 5rem;
         padding: 2rem 1.5rem;
     }
+    .programa__video {
+        height: 55rem;
+    }
     .menu__programa .icono,
-    .detalle_evento .icono { font-size: 1.8rem}
-    .detalle_evento p { font-size: 1.6rem }
-    .detalle_evento h3 { font-size: 1.8rem }
+    .detalle_evento .icono { 
+        font-size: 1.8rem;
+    }
+    .detalle_evento p { 
+        font-size: 1.6rem 
+    }
+    .detalle_evento h3 { 
+        font-size: 1.8rem 
+    }
+}
+@media (min-width: 1200px) {
+    .programa__info_evento {
+        left: 10rem;
+    }
+}
+@media (min-width: 1600px) {
+    .programa__video {
+        height: 60rem;
+    }
 }
 
 
 /* ********* Ivitados ********* */
 @media (min-width: 1200px) {
     .invitados__img_container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 35rem);
+        column-gap: 2rem;
     }
 }
 
+@media (min-width: 1600px) {
+    .invitados__img_container {
+        grid-template-columns: repeat(3, 40rem);
+    }
+}
 
 /* ******* Contador ******** */
 @media (min-width: 992px) {
@@ -118,40 +141,48 @@
         grid-template-columns: repeat(auto-fit, minmax(21.5rem, 1fr));
         padding: 6rem 0;
     }
-    .contador__div .numero { font-size: 6.8rem; }
+    .contador__div .numero { font-size: 5.8rem; }
     .contador__div h3 { font-size: 1.7rem; }
 }
 @media (min-width: 1200px) {
     .contador { padding: 5rem 0}
-    .contador .container__contador { 
+
+    .contador .container__contador {
+        grid-template-columns: repeat(4, 30rem);
+        justify-content: center;
         padding: 7rem 0; 
     }
-    .contador__div .numero { font-size: 5.6vw; }
-    .contador__div h3 { font-size: 1.9rem; }
 }
 
 
 
 /* ******** Precio ********* */
 @media (min-width: 992px) {
-    .precios__contenedor_lista { padding: 3rem 0; }
-    .item__precio_info h3 { font-size: 1.6rem}
+    .precios__contenedor_lista { 
+        padding: 3rem 0; 
+    }
+    .item__precio_info h3 { 
+        font-size: 1.6rem
+    }
     .item__precio_info .numero {
         font-size: 5.8rem;
     }
     .item__precio_info > ul {
         font-size: 1.4rem;
     }
-    .item__precio_info .button { font-size: 1.5rem; }
-}
-@media (min-width: 1200px) {
-    .precios__contenedor_lista { justify-content: space-evenly;}
-    .item__precio_info h3 { font-size: 1.8rem}
-    .item__precio_info .numero {
-        font-size: 6.5rem;
+    .item__precio_info .button { 
+        font-size: 1.5rem; 
     }
-    .item__precio_info > ul {
-        font-size: 1.6rem;
+}
+@media (min-width: 1200px) {   
+    .precios__contenedor_lista { 
+        justify-content: center;
+    }
+
+    .item__precio_info:hover {
+        border: 1px solid var(--color-primary);
+        transform: scale(1.05);
+        box-shadow: 0 0 15px #666;
     }
     .item__precio_info .button {
         font-size: 1.7rem;
@@ -170,12 +201,18 @@
 }
 
 
+/* ********* Testimoniales ********* */
+@media (min-width: 992px) {
+    .testimonials__lista {
+        justify-content: center;
+    }
+}
+
+
 
 /* ********* Newsletter ********* */
 @media (min-width: 1200px) {
-    .newsletter__text { padding: 8rem 0; }
-    .newsletter__text p { font-size: 2rem; }
-    .newsletter__text h3 { font-size: 4.8vw; }
+    .newsletter__text { padding: 6rem 0; }
     .newsletter__text .button {
         padding: 1rem 5rem;
         font-size: 1.8rem;
@@ -189,32 +226,22 @@
     .cuenta_regresiva_contenedor {
         grid-template-columns: repeat(auto-fit, minmax(21.5rem, 1fr));
     }
-    .cuenta_regresiva {  padding: 4rem 1rem; }
-    .cuenta .numero { font-size: 6.3rem}
-    .cuenta h3 { font-size: 2.1rem}
+    .cuenta_regresiva {  padding: 5rem 1rem; }
+    .cuenta h3 { font-size: 1.7rem}
 }
 
 @media (min-width: 1200px) {
-    .cuenta .numero { font-size: 5.6vw}
-    .cuenta h3 { font-size: 2.3rem}
+    .cuenta_regresiva_contenedor {
+        grid-template-columns: repeat(4, 30rem);
+        justify-content: center;
+    }
 }
 
 
 /* ******** Footer ********* */
-@media (min-width: 992px) {
-    .footer_div h3 { font-size: 2.7rem; }
-    .footer_div p { font-size: 1.5rem; }
-    .copyright__footer { font-size: 1.5rem; }
-    .footer_redes_nav .icono {
-        font-size: 2.5rem;
-    }
-}
 
 @media (min-width: 1200px) {
-    .footer_div h3 { font-size: 2.9rem; }
-    .footer_div p { font-size: 1.7rem; }
-    .copyright__footer { font-size: 1.8rem; }
-    .footer_redes_nav .icono {
-        font-size: 2.8rem;
+    .copyright__footer { 
+        font-size: 1.5rem;
     }
 }

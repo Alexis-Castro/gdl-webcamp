@@ -21,7 +21,7 @@ img {
 }
 
 h2, h3 {
-    font-size: 2.7rem;
+    font-size: 2.4rem;
     font-weight: 500;
     font-family: var(--font-primary);
     text-transform: uppercase;
@@ -56,6 +56,13 @@ h2::after {
     margin-top: 20px;
     display: inline-block;
     border: 2px solid var(--color-primary);
+    cursor: pointer;
+    transition: background-color .2s ease-in, border-color .2s ease-in;
+}
+
+.button:hover {
+    background-color: #d62e00;
+    border-color: #8a817e;
 }
 
 .numero {
@@ -205,12 +212,12 @@ h2::after {
 .menu__navigation__ul--desktop > a {
     font-family: var(--font-primary);
     text-transform: uppercase;
-    padding: 2rem;
+    padding: 1.8rem 1.5rem;
     font-size: 2rem;
     font-weight: 500;
     border-radius: 5px;
     color: #fff;
-    transition: background-color .1s ease-in, color .3s ease-in;
+    transition: background-color .1s ease-in, color .2s ease-in;
 }
 
 .menu__disabled {
@@ -502,21 +509,11 @@ h2::after {
     background-color: var(--color-primary);
     color: #fff;
 }
-.item__precio_info:nth-child(2n) {
-    transform: scale(1.06);
-}
-
-.item__precio_info:hover {
-    border: 1px solid var(--color-primary);
-    transform: scale(1.06);
-    box-shadow: 0 0 15px #666;
-}
 
 
 
 
 /******** Mapa-Ubicacion ********/
-
 .mapa {
     height: 30rem;
     background-color: aquamarine;
@@ -528,19 +525,23 @@ h2::after {
 .contenedor__testimonials { padding: .8rem 1.5rem; }
 
 .testimonials__lista {
-    display: grid;
-    gap: 4rem 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
-    justify-content: center;
-    justify-items: center;
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
     padding-bottom: 5rem;
 }
 
 .item_testimonials {
+    position: relative;
+    scroll-snap-align: center;
+    margin: 0 2rem;
+    width: 70%;
+    min-width: 26rem;
+    max-width: 35rem;
     border: 1px solid #e1e1e1;
     background-color: #fff;
     padding: 0 1.7rem 0 3.5rem;
-    width: 95%;
 }
 
 .item_testimonials blockquote {
@@ -652,12 +653,12 @@ h2::after {
 /******* Footer *******/
 .footer { 
     background-color: #353535;
+    padding: 2rem 2rem 1rem;
 }
 
 .footer__contenedor {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    justify-items: center;
     gap: 1.5rem 4rem;
     color: #fff;
 }
@@ -698,15 +699,15 @@ h2::after {
 }
 
 .copyright__footer {
-    margin-top: 2.5rem;
-    padding-bottom: 1rem;
+    background-color: #313131;
+    padding: 1.5rem 0;
     text-align: center;
     font-size: 1.2rem;
     font-family: var(--font-secondary);
     color: #fff;
 }
 
-.copyright__footer p { margin-bottom: 0; }
+.copyright__footer p { margin: 0; }
 
 
 
@@ -734,4 +735,74 @@ h2::after {
 
 .form__registro_campo > input {
     padding: .5rem;
+}
+
+.precios__paquetes .item__precio_info:hover {
+    transform: none;
+    box-shadow: 0 0 8px #666;
+}
+
+.precios__paquetes .item__precio_info input {
+    clear: both;
+    width: 10rem;
+    display: block;
+    margin: 1rem auto 0;
+}
+
+.contenido__dia {
+    padding-bottom: 3rem;
+}
+
+.talleres_caja .contenido__dia-viernes,
+.contenido__dia-sabado,
+.contenido__dia-domingo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(21.5rem, 1fr));
+}
+.talleres_caja .contenido__dia-viernes > div,
+.contenido__dia-sabado > div,
+.contenido__dia-domingo > div {
+    padding: 0 2rem;
+    text-align: left;
+}
+.talleres_caja .contenido__dia-viernes > div p,
+.contenido__dia-sabado > div p,
+.contenido__dia-domingo > div p {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+.talleres_caja .contenido__dia-viernes > div label,
+.contenido__dia-sabado > div label,
+.contenido__dia-domingo > div label {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+.talleres_caja .contenido__dia-viernes > div input,
+.contenido__dia-sabado > div input,
+.contenido__dia-domingo > div input {
+    margin-right: .5rem;
+}
+.talleres_caja .contenido__dia-viernes > div time,
+.contenido__dia-sabado > div time,
+.contenido__dia-domingo > div time {
+    color: #fe4918;
+    font-weight: bold;
+}
+
+
+
+.talleres_caja, .resumen_caja { 
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border: 2px solid #e1e1e1;
+}
+
+.contenido__dia h4 {
+    margin-bottom: 0;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fe4918;
+    padding-bottom: 1rem;
+    font-size: 2rem;
 }
